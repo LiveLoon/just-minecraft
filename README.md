@@ -6,9 +6,9 @@
 ![Status](https://img.shields.io/badge/Status-Online-2ea44f)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-> **"JustMC"** —— 一个纯净、公益、自由的原版生存服务器。
+> **"JustMC"** —— 一个纯净、公益、社区维护的我的世界服务器。
 
-JustMC 是一个运行于 **Minecraft 26.2（最新正式版）** 的公益服务器，坚持纯净无模组、无商业化。服务器 24/7 不间断运行，需正版账户。
+JustMC 是一个运行于 **Minecraft 26.2 ** 的服务器，无模组、无商业化。服务器 24/7 运行，需正版账户。
 
 ---
 
@@ -77,6 +77,7 @@ just-minecraft/
 
 ### 环境要求
 - **Java 21+**（推荐使用 OpenJDK 21）
+- **Docker & Docker compose** 
 - **系统**：Linux / Windows / macOS（推荐 Linux 生产环境）
 - **内存**：至少 4GB（建议 8GB+）
 - **存储**：至少 20GB（含世界数据）
@@ -100,7 +101,7 @@ java -Xms4G -Xmx8G -jar paper-26.2-40.jar nogui
 ## 🤝 贡献与参与
 
 - **玩家交流**：加入 QQ 群 **661436985**
-- **问题反馈**：请在 GitHub Issues 中提交，或联系服主。
+- **问题反馈**：请在 QQ 群或者 GitHub Issues 中提交，或联系服主。
 - **贡献代码/插件**：欢迎提交 Pull Request，但请先阅读贡献指南。
 
 ---
