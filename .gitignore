@@ -121,8 +121,6 @@ just-mc-official-webside/frontend/.env.*.local
 
 # 编译生成的 JAR 包（除了您自己编写的源码，其他都忽略）
 *.jar
-!paper-26.2-40.jar
-!just-mc-server-1.0-SNAPSHOT.jar
 
 # ============================
 # 其他可能忽略的文件
