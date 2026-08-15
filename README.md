@@ -84,8 +84,8 @@ just-minecraft/
 - **Java 21+**（推荐使用 OpenJDK 21）
 - **Docker & Docker compose** 
 - **系统**：Linux / Windows / macOS（推荐 Linux 生产环境）
-- 下载 paper-26.2-40.jar 放在 项目的根目录下
-- 编译 just-mc-official-webside/backend/just-mc-server的web项目服务端  just-mc-server-1.0-SNAPSHOT.jar 放在 项目的根目录下
+- 下载 **paper-26.2-40.jar** 放在 项目的根目录下
+- 编译 just-mc-official-webside/backend/just-mc-server的web项目服务端  **just-mc-server-1.0-SNAPSHOT.jar** 放在 项目的根目录下
 
 ### 使用 Docker Compose 快速启动
 ```bash
