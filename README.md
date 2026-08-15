@@ -49,6 +49,7 @@ JustMC 是一个运行于 **Minecraft 26.2 ** 的服务器，无模组、无商�
 
 以下是本仓库的主要目录和文件说明：
 
+```bash
 just-minecraft/
 ├── backups/                  # 世界备份压缩包（自动生成）
 ├── config/                   # Paper 服务器核心配置
@@ -70,6 +71,9 @@ just-minecraft/
 ├── Dockerfile                # 容器构建文件
 ├── start.sh                  # （示例）启动脚本
 └── README.md                 # 本文件
+```
+
+
 
 ---
 
