@@ -73,21 +73,6 @@ level.dat
 level.dat_old
 session.lock
 
-# 用户数据和缓存
-usercache.json
-banned-ips.json
-banned-players.json
-ops.json
-whitelist.json
-permissions.yml
-help.yml
-commands.yml
-bukkit.yml
-spigot.yml
-paper.yml
-server.properties  # 可能包含端口、密码等敏感信息
-version_history.json
-
 # 插件数据（忽略所有 JAR 文件，但保留配置目录结构）
 plugins/*.jar
 plugins/**/*.jar
