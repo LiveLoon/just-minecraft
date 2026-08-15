@@ -1,0 +1,6 @@
+accessKey: 79b372590e27d08063f1e7412e9c40ff
+salt: VoSOXF
+webServerPort: 3000
+mcdrSocketPort: 25576
+cookieSecure: false
+proxyHeaders: false

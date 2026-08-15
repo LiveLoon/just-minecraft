@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustMC 服务器 · 我的世界纯净公益服</title>
+    <!-- 像素风格字体 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ===== 全局重置 & 基础 ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #1a0f0a;
+        /* 深色泥土底 */
+        background-image:
+          radial-gradient(ellipse at 20% 50%, #2d1a10 0%, transparent 60%),
+          radial-gradient(ellipse at 80% 50%, #2d1a10 0%, transparent 60%),
+          repeating-linear-gradient(
+            45deg,
+            rgba(60, 40, 28, 0.15) 0px,
+            rgba(60, 40, 28, 0.15) 2px,
+            rgba(40, 25, 16, 0.15) 2px,
+            rgba(40, 25, 16, 0.15) 4px
+          );
+        min-height: 100vh;
+        padding: 20px;
+        font-family: 'VT323', 'Courier New', monospace;
+        color: #efe6d8;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      /* ===== 主容器 ===== */
+      .container {
+        max-width: 1024px;
+        width: 100%;
+        background: rgba(30, 18, 10, 0.85);
+        border: 4px solid #6d4c41;
+        box-shadow:
+          inset 0 0 0 2px #3d2417,
+          0 8px 32px rgba(0, 0, 0, 0.8),
+          0 0 0 4px #2d1a10;
+        padding: 30px 30px 40px;
+        border-radius: 0;
+        backdrop-filter: blur(2px);
+        position: relative;
+      }
+
+      /* ===== 像素装饰线 ===== */
+      .pixel-divider {
+        width: 100%;
+        height: 4px;
+        background: repeating-linear-gradient(
+          90deg,
+          #6d4c41 0px,
+          #6d4c41 8px,
+          #3d2417 8px,
+          #3d2417 16px
+        );
+        margin: 28px 0;
+        image-rendering: pixelated;
+      }
+
+      .pixel-divider--thin {
+        height: 2px;
+        margin: 18px 0;
+        background: repeating-linear-gradient(
+          90deg,
+          #4d3428 0px,
+          #4d3428 6px,
+          #2d1a10 6px,
+          #2d1a10 12px
+        );
+      }
+
+      /* ===== 标题 & 文字 ===== */
+      h1,
+      h2,
+      h3,
+      .pixel-font {
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        letter-spacing: 0.04em;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 6vw, 3.4rem);
+        color: #ffd54f;
+        text-align: center;
+        text-shadow:
+          3px 3px 0 #5d4037,
+          6px 6px 0 rgba(0, 0, 0, 0.6);
+        margin-bottom: 6px;
+        word-break: break-word;
+      }
+
+      h1 .sub {
+        display: block;
+        font-size: 0.35em;
+        color: #aed581;
+        text-shadow: 2px 2px 0 #33691e;
+        margin-top: 8px;
+        letter-spacing: 0.3em;
+        font-family: 'VT323', 'Courier New', monospace;
+      }
+
+      h2 {
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        color: #ffd54f;
+        margin: 16px 0 12px 0;
+        padding-bottom: 6px;
+        border-bottom: 3px solid #6d4c41;
+        display: inline-block;
+        text-shadow: 2px 2px 0 #3d2417;
+      }
+
+      h3 {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        color: #c8e6c9;
+        margin: 12px 0 8px 0;
+        text-shadow: 2px 2px 0 #1f3a1f;
+      }
+
+      p,
+      li,
+      .text-body {
+        font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+        font-family: 'VT323', 'Courier New', monospace;
+        letter-spacing: 0.02em;
+        color: #e8ddd0;
+      }
+
+      .text-muted {
+        color: #b5a89a;
+        font-size: 0.9em;
+      }
+
+      .text-gold {
+        color: #ffd54f;
+      }
+
+      .text-green {
+        color: #aed581;
+      }
+
+      .text-orange {
+        color: #ffab91;
+      }
+
+      .text-red {
+        color: #ef9a9a;
+      }
+
+      /* ===== 卡片 ===== */
+      .card {
+        background: rgba(46, 30, 20, 0.75);
+        border: 3px solid #5d3f31;
+        box-shadow:
+          inset 0 0 0 2px #3d2417,
+          0 4px 12px rgba(0, 0, 0, 0.5);
+        padding: 20px 24px;
+        margin: 16px 0;
+        transition: border-color 0.2s;
+        image-rendering: pixelated;
+      }
+
+      .card:hover {
+        border-color: #8d6e63;
+      }
+
+      .card--highlight {
+        border-color: #aed581;
+        background: rgba(56, 70, 40, 0.35);
+      }
+
+      .card--gold {
+        border-color: #ffd54f;
+        background: rgba(70, 56, 20, 0.3);
+      }
+
+      /* ===== 名片表格 ===== */
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4px 20px;
+        font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+      }
+
+      .info-grid .label {
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-size: 0.65em;
+        color: #bcaaa4;
+        padding: 6px 0;
+        border-bottom: 1px dashed #4d3428;
+        text-transform: uppercase;
+      }
+
+      .info-grid .value {
+        padding: 6px 0;
+        border-bottom: 1px dashed #4d3428;
+        color: #f5ede4;
+        word-break: break-all;
+      }
+
+      .info-grid .value .ip {
+        background: #2d1a10;
+        padding: 2px 10px;
+        border: 2px solid #5d3f31;
+        display: inline-block;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7em;
+        color: #aed581;
+        letter-spacing: 0.05em;
+      }
+
+      /* ===== 规则列表 ===== */
+      .rule-list {
+        list-style: none;
+        padding: 0;
+        counter-reset: rule-counter;
+      }
+
+      .rule-list li {
+        counter-increment: rule-counter;
+        padding: 10px 0 10px 52px;
+        border-bottom: 1px solid rgba(93, 63, 49, 0.3);
+        position: relative;
+        font-size: clamp(0.92rem, 1.3vw, 1.1rem);
+      }
+
+      .rule-list li:last-child {
+        border-bottom: none;
+      }
+
+      .rule-list li::before {
+        content: counter(rule-counter);
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-size: 0.8em;
+        color: #ffd54f;
+        background: #3d2417;
+        border: 2px solid #6d4c41;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 8px;
+        text-shadow: 1px 1px 0 #1a0f0a;
+      }
+
+      .rule-list li strong {
+        color: #ffab91;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7em;
+        letter-spacing: 0.02em;
+      }
+
+      /* ===== 原则卡片 ===== */
+      .principle-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+        margin: 8px 0;
+      }
+
+      .principle-item {
+        background: rgba(30, 18, 10, 0.6);
+        border: 3px solid #5d3f31;
+        padding: 18px 16px;
+        text-align: center;
+        box-shadow: inset 0 0 0 2px #3d2417;
+        transition:
+          transform 0.15s,
+          border-color 0.2s;
+      }
+
+      .principle-item:hover {
+        transform: scale(1.02);
+        border-color: #aed581;
+      }
+
+      .principle-item .icon {
+        font-size: 2.4rem;
+        display: block;
+        margin-bottom: 6px;
+        filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+      }
+
+      .principle-item .title {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7em;
+        color: #ffd54f;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .principle-item .desc {
+        font-size: 0.9em;
+        color: #d7ccc8;
+      }
+
+      /* ===== 按钮 ===== */
+      .btn {
+        display: inline-block;
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-size: 0.65em;
+        padding: 12px 28px;
+        background: #5d8a3c;
+        color: #f5f0e8;
+        border: 4px solid #33691e;
+        box-shadow:
+          inset 0 -4px 0 #1f3a1f,
+          0 4px 0 #1f3a1f;
+        text-decoration: none;
+        text-shadow: 2px 2px 0 #1f3a1f;
+        transition: all 0.1s ease;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        image-rendering: pixelated;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        background: #6f9e4a;
+        border-color: #4c7a2e;
+        box-shadow:
+          inset 0 -4px 0 #2d4d1a,
+          0 6px 0 #1f3a1f;
+      }
+
+      .btn:active {
+        transform: translateY(4px);
+        box-shadow:
+          inset 0 -2px 0 #1f3a1f,
+          0 2px 0 #1f3a1f;
+      }
+
+      .btn--secondary {
+        background: #5d4037;
+        border-color: #3d2417;
+        box-shadow:
+          inset 0 -4px 0 #2d1a10,
+          0 4px 0 #2d1a10;
+        text-shadow: 2px 2px 0 #2d1a10;
+      }
+
+      .btn--secondary:hover {
+        background: #6d4c41;
+        border-color: #4d3428;
+      }
+
+      /* ===== 标签 ===== */
+      .tag {
+        display: inline-block;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.5em;
+        padding: 3px 12px;
+        background: #3d2417;
+        border: 2px solid #6d4c41;
+        color: #d7ccc8;
+        letter-spacing: 0.06em;
+        margin: 2px 4px 2px 0;
+      }
+
+      .tag--green {
+        background: #2d4d1a;
+        border-color: #5d8a3c;
+        color: #aed581;
+      }
+
+      .tag--gold {
+        background: #5d4a1a;
+        border-color: #b8942a;
+        color: #ffd54f;
+      }
+
+      .tag--red {
+        background: #5d1a1a;
+        border-color: #b84a2a;
+        color: #ef9a9a;
+      }
+
+      /* ===== FAQ ===== */
+      .faq-item {
+        padding: 10px 0;
+        border-bottom: 1px dashed rgba(93, 63, 49, 0.3);
+      }
+
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+
+      .faq-item .q {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7em;
+        color: #ffd54f;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .faq-item .a {
+        padding-left: 8px;
+        color: #d7ccc8;
+      }
+
+      /* ===== 免责协议 ===== */
+      .disclaimer {
+        background: rgba(30, 12, 8, 0.7);
+        border: 3px solid #8d6e63;
+        padding: 20px 24px;
+        margin-top: 16px;
+        font-size: clamp(0.85rem, 1.2vw, 1rem);
+      }
+
+      .disclaimer h2 {
+        border-bottom-color: #8d6e63;
+      }
+
+      .disclaimer .section-num {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7em;
+        color: #ffab91;
+        margin-right: 8px;
+      }
+
+      /* ===== 玩家组织占位 ===== */
+      .org-placeholder {
+        text-align: center;
+        padding: 24px 16px;
+        background: rgba(30, 18, 10, 0.4);
+        border: 3px dashed #5d3f31;
+        font-size: 1.1rem;
+        color: #b5a89a;
+      }
+
+      .org-placeholder .big-icon {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 8px;
+        opacity: 0.5;
+      }
+
+      /* ===== 响应式 ===== */
+      @media (max-width: 720px) {
+        .container {
+          padding: 16px;
+        }
+
+        .info-grid {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+
+        .info-grid .label {
+          border-bottom: none;
+          padding-bottom: 2px;
+          font-size: 0.6em;
+        }
+
+        .info-grid .value {
+          padding-top: 2px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #4d3428;
+        }
+
+        .principle-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .rule-list li {
+          padding-left: 44px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+
+        .rule-list li::before {
+          width: 28px;
+          height: 28px;
+          font-size: 0.7em;
+          top: 6px;
+        }
+
+        .card {
+          padding: 14px 16px;
+        }
+
+        .btn {
+          padding: 10px 18px;
+          font-size: 0.55em;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 8px;
+        }
+
+        .container {
+          padding: 12px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        .info-grid .value .ip {
+          font-size: 0.55em;
+          padding: 2px 6px;
+        }
+      }
+
+      /* ===== 小工具 ===== */
+      .text-center {
+        text-align: center;
+      }
+
+      .mt-8 {
+        margin-top: 8px;
+      }
+      .mt-16 {
+        margin-top: 16px;
+      }
+      .mt-24 {
+        margin-top: 24px;
+      }
+      .mb-8 {
+        margin-bottom: 8px;
+      }
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+
+      .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* ===== 图片占位 ===== */
+      .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+        margin: 12px 0;
+      }
+
+      .screenshot-placeholder {
+        background: #2d1a10;
+        border: 3px solid #5d3f31;
+        aspect-ratio: 16 / 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        color: #6d4c41;
+        font-family: 'Press Start 2P', monospace;
+        text-align: center;
+        padding: 8px;
+        image-rendering: pixelated;
+        box-shadow: inset 0 0 0 2px #3d2417;
+      }
+
+      .screenshot-placeholder .pixel-art {
+        font-size: 2.2rem;
+        line-height: 1;
+        filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+      }
+
+      /* ===== 版本徽章 ===== */
+      .version-badge {
+        display: inline-block;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.55em;
+        background: #1f3a1f;
+        color: #aed581;
+        padding: 4px 14px;
+        border: 3px solid #33691e;
+        box-shadow: inset 0 -3px 0 #1a2f1a;
+        letter-spacing: 0.04em;
+      }
+
+      /* ===== 引用块 ===== */
+      .blockquote {
+        border-left: 6px solid #ffd54f;
+        padding: 12px 20px;
+        background: rgba(30, 18, 10, 0.4);
+        margin: 12px 0;
+        font-style: italic;
+        color: #d7ccc8;
+        font-size: 1.05rem;
+      }
+
+      .blockquote cite {
+        display: block;
+        font-style: normal;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.55em;
+        color: #b5a89a;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ============================================================ -->
+      <!-- HEADER -->
+      <!-- ============================================================ -->
+      <header class="text-center">
+        <div class="version-badge" style="margin-bottom: 10px">v26.2</div>
+        <h1>
+          JustMC
+          <span class="sub">⚡ 纯净 · 自由 · 公益 ⚡</span>
+        </h1>
+        <p style="font-size: 1.1rem; color: #bcaaa4; margin-top: 4px">我的世界 · 原版生存服务器</p>
+        <div class="pixel-divider"></div>
+      </header>
+
+      <!-- ============================================================ -->
+      <!-- 介绍 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>🍃 介绍</h2>
+        <div class="card">
+          <p style="font-size: 1.1rem">JustMC 服务器的介绍却如此简短，就像她的名字一样。</p>
+          <!-- 截图占位 -->
+          <div class="screenshot-grid">
+            <div class="screenshot-placeholder">
+              <span class="pixel-art">⛰️</span>
+            </div>
+            <div class="screenshot-placeholder">
+              <span class="pixel-art">🌲</span>
+            </div>
+            <div class="screenshot-placeholder">
+              <span class="pixel-art">🏡</span>
+            </div>
+            <div class="screenshot-placeholder">
+              <span class="pixel-art">🌅</span>
+            </div>
+            <div class="screenshot-placeholder">
+              <span class="pixel-art">⛏️</span>
+            </div>
+          </div>
+          <p class="text-muted" style="font-size: 0.85rem; text-align: center">
+            ▲ 服务器风景 · 像素记录
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 名片 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>📌 名片</h2>
+        <div class="card card--gold">
+          <div class="info-grid">
+            <div class="label">服务器地址 1</div>
+            <div class="value"><span class="ip">8.155.146.189:25265</span></div>
+
+            <div class="label">服务器地址 2</div>
+            <div class="value"><span class="ip">47.97.174.210:25265</span></div>
+
+            <div class="label">游戏版本</div>
+            <div class="value">
+              <strong class="text-green">最新 26.2</strong> · 纯净版，随官方迭代
+            </div>
+
+            <div class="label">正版验证</div>
+            <div class="value">✅ 需要正版 Minecraft 账户</div>
+
+            <div class="label">在线模式</div>
+            <div class="value">开启（正版登录）</div>
+
+            <div class="label">最大同时在线</div>
+            <div class="value"><strong class="text-gold">20 人</strong></div>
+
+            <div class="label">运行时间</div>
+            <div class="value"><span class="tag tag--green">24h × 7d</span> 不间断</div>
+
+            <div class="label">公益性质</div>
+            <div class="value"><span class="tag tag--gold">免费</span></div>
+
+            <div class="label">QQ群</div>
+            <div class="value"><strong class="text-orange">661436985</strong> · 入群获取公告</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 原则 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>🌟 原则</h2>
+        <div class="principle-grid">
+          <div class="principle-item">
+            <span class="icon">🧊</span>
+            <span class="title">纯净</span>
+            <span class="desc">无模组 · 无商业化 · 原版</span>
+          </div>
+          <div class="principle-item">
+            <span class="icon">🕊️</span>
+            <span class="title">自由</span>
+            <span class="desc"
+              >建筑 · 破坏 · 红石 · 探险<br /><span class="text-muted" style="font-size: 0.8em"
+                >腐竹不干涉正常游戏</span
+              ></span
+            >
+          </div>
+          <div class="principle-item">
+            <span class="icon">❤️</span>
+            <span class="title">公益</span>
+            <span class="desc"
+              >不收费 · 无商业<br /><span class="text-muted" style="font-size: 0.8em"
+                >一个纯粹的家</span
+              ></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 规则 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>⚠️ 规则 &amp; 封禁底线</h2>
+        <div class="card">
+          <ol class="rule-list">
+            <li>
+              <strong>禁止恶意破坏服务器运行</strong><br />
+              严禁 DDoS
+              攻击、漏洞利用、刷屏/炸服等任何危害服务器稳定性的行为。情况严重者将追究法律责任。
+            </li>
+            <li>
+              <strong>尊重他人，友善交流</strong><br />
+              群内/游戏内禁止辱骂、歧视、政治敏感内容。
+            </li>
+            <li>
+              <strong>适度的红石</strong><br />
+              为避免卡服，请避免建造超大规模高频红石。
+            </li>
+            <li>
+              <strong>领地 / 建筑</strong><br />
+              请勿恶意毁坏其他玩家明确标记的工程（家，建筑，红石机械，刷怪塔等），使用告示牌声明。
+            </li>
+            <li>
+              <strong>客户端修改与作弊</strong><br />
+              禁止使用透视，开挂，飞行。一旦发现且证据存在，<span class="text-red">直接封禁</span>。
+            </li>
+            <li>
+              <strong>挂机（AFK）与实体压迫</strong><br />
+              严禁使用自动按键精灵（连点器）或物理卡键进行 24
+              小时不间断挂机。若因挂机导致服务器资源耗尽，管理员有权直接踢出或清除该玩家实体和资源。<br />
+              单次加载范围内若因实体大规模存在导致卡顿，管理员有权在未通知的情况下直接清除实体和刷怪塔/养殖场以保
+              TPS。
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 补充 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>⚖️ 补充 · 举报与执行</h2>
+        <div class="card card--highlight">
+          <p>
+            <span class="tag tag--red">有效证据</span> 所有举报必须附带
+            <strong>包含坐标（F3界面）和破坏者ID</strong> 的截图或录屏，否则无法受理。
+          </p>
+          <p class="mt-8">
+            <span class="tag tag--gold">最终解释权</span>
+            对于以上未明确列出、但明显利用漏洞“钻空子”且严重影响他人体验的行为，同样处理。
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 插件 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>🍵 插件</h2>
+        <div class="card">
+          <p>
+            <strong class="text-green">Simple Voice Chat</strong> ·
+            服务器提供语音聊天功能，玩家需要自行安装 Forge 或 Fabric 版本的 Simple Voice Chat
+            模组，才可以和其他安装了的玩家进行语音交流。
+          </p>
+          <p class="text-muted mt-8" style="font-size: 0.9rem">
+            📢 插件添加由大家投票决定（如领地划分插件）
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 维护与更新 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>📅 维护与更新</h2>
+        <div class="card">
+          <p>
+            <span class="tag tag--green">版本更新</span>
+            服务器根据需求，每次大版本升级前会在群内预告，并保留旧版备份供过渡。
+          </p>
+          <p class="mt-8">
+            <span class="tag tag--gold">重启维护</span> 若遇异常崩溃或计划维护，会在群内提前 30
+            分钟通知。
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 加入我们 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>📲 加入我们</h2>
+        <div class="card text-center" style="padding: 24px 20px">
+          <p style="font-size: 1.2rem; margin-bottom: 12px">
+            1. 加群 · <strong class="text-gold">QQ 661436985</strong>
+          </p>
+          <p style="font-size: 1.2rem; margin-bottom: 16px">
+            2. 验证正版 · 启动器登录正版账号，添加服务器地址
+          </p>
+          <div class="flex-center">
+            <span class="btn" onclick="alert('QQ群号：661436985\n请打开QQ搜索加入。')"
+              >📱 加入QQ群</span
+            >
+            <span
+              class="btn btn--secondary"
+              onclick="
+                navigator.clipboard
+                  ?.writeText('8.155.146.189:25265')
+                  .then(() => alert('✅ 地址已复制！'))
+              "
+              >📋 复制地址</span
+            >
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem">
+            地址1：<span class="ip" style="font-size: 0.7rem">8.155.146.189:25265</span>
+            &nbsp;·&nbsp; 地址2：<span class="ip" style="font-size: 0.7rem"
+              >47.97.174.210:25265</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 玩家组织 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>✅ 本服玩家组织</h2>
+        <div class="org-placeholder">
+          <span class="big-icon">🏗️</span>
+          目前暂无组织<br />
+          <span class="text-muted" style="font-size: 0.9rem">（如需添加，联系腐竹）</span>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- FAQ -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>❓ 常见问题</h2>
+        <div class="card">
+          <div class="faq-item">
+            <span class="q">Q：为什么需要正版？</span>
+            <span class="a">A：保证玩家身份唯一，方便我们追溯违规行为。</span>
+          </div>
+          <div class="faq-item">
+            <span class="q">Q：服务器卡顿怎么办？</span>
+            <span class="a"
+              >A：低成本服务器性能有限，20
+              人满员时可能略有延迟。建议避免高峰期集中加载新区块。</span
+            >
+          </div>
+          <div class="faq-item">
+            <span class="q">Q：我能当管理/OP吗？</span>
+            <span class="a">A：本服无 OP 制度，暂不招募管理员。但你的合理建议会认真听取。</span>
+          </div>
+          <div class="faq-item">
+            <span class="q">Q：世界边界和存档会重置吗？</span>
+            <span class="a"
+              >A：目前边界限制为 50000，也不会轻易重置。若未来因版本大更需重置，会提前提醒。</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 最后的话 -->
+      <!-- ============================================================ -->
+      <div class="blockquote" style="margin: 24px 0 8px">
+        “这个服务器始于一份下班后的闲暇，也希望能成为你的世界里的另一个家。”
+        <cite>— 腐竹 LiveLoon</cite>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- 免责协议 -->
+      <!-- ============================================================ -->
+      <div class="pixel-divider"></div>
+
+      <section>
+        <h2 style="border-bottom-color: #8d6e63">📄 免责协议</h2>
+        <div class="disclaimer">
+          <p style="font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: #bcaaa4">
+            版本：26.2 &nbsp;·&nbsp; 生效：2026年6月28日 &nbsp;·&nbsp; 服主：LiveLoon
+          </p>
+          <p class="mt-8" style="color: #d7ccc8">
+            欢迎来到本服！您一旦连接本服并进入游戏，即表示您已完全理解并同意本协议的全部内容。如您不同意任何条款，请立即断开连接。
+          </p>
+
+          <h3 class="mt-16"><span class="section-num">1.</span> 服务性质声明</h3>
+          <p>
+            本服为 <strong>个人公益性质</strong> 的免费 Minecraft
+            服务器，<strong>非商业运营</strong>，不向玩家收取任何费用，同样不提供任何担保或服务承诺。服主保留随时修改、暂停、终止服务器运行的权利，但会尽量提前通知。
+          </p>
+
+          <h3 class="mt-16"><span class="section-num">2.</span> 免责范围</h3>
+          <p>
+            在适用法律允许的最大范围内，服主对以下情况
+            <strong>不承担任何责任</strong>（包括但不限于）：
+          </p>
+          <ul style="list-style: none; padding-left: 12px; margin-top: 6px">
+            <li style="padding: 4px 0">
+              •
+              <strong>服务器稳定性</strong
+              >：因网络波动、硬件故障、电力中断、第三方攻击、游戏版本更新兼容性问题等导致的服务器不可用、延迟、回档或崩溃。
+            </li>
+            <li style="padding: 4px 0">
+              •
+              <strong>游戏数据丢失</strong
+              >：因服务器意外宕机、存档损坏、备份失败或人为误操作导致的玩家建筑、物品、进度等任何游戏内数据的丢失或损坏。（尽管服主会每周备份，但不保证备份的完整性和及时性。）
+            </li>
+            <li style="padding: 4px 0">
+              • <strong>玩家间纠纷</strong>：玩家之间的
+              PVP、破坏、欺诈、言语冲突等行为引发的任何损失或心理伤害。服主不介入调解，但保留对违反服务器规则者采取封禁措施的权力。
+            </li>
+            <li style="padding: 4px 0">
+              •
+              <strong>第三方软件及账号安全</strong
+              >：因玩家使用非官方启动器、作弊模组、外挂等导致的账号被盗、电脑中毒或个人信息泄露，服主概不负责。正版验证由
+              Mojang/Microsoft 提供，服主不存储您的密码或凭证。
+            </li>
+            <li style="padding: 4px 0">
+              •
+              <strong>法律风险</strong
+              >：玩家在游戏内或群内发布违反中国法律法规的内容，由该玩家自行承担全部法律责任。
+            </li>
+          </ul>
+
+          <h3 class="mt-16"><span class="section-num">3.</span> 玩家责任与义务</h3>
+          <ul style="list-style: none; padding-left: 12px; margin-top: 6px">
+            <li style="padding: 4px 0">
+              • 您承诺使用 <strong>正版 Minecraft 账户</strong> 登录，并自行保管好您的账号密码。
+            </li>
+            <li style="padding: 4px 0">
+              • 您同意
+              <strong>自行承担</strong> 因游玩本服而产生的任何设备损耗、电力消耗或网络流量费用。
+            </li>
+            <li style="padding: 4px 0">
+              • 您应遵守国家法律法规及本服的
+              <strong>服务器规则和封禁规则</strong
+              >，不进行任何破坏服务器运行或干扰其他玩家的恶意行为。
+            </li>
+            <li style="padding: 4px 0">
+              • 您已知晓本服为公益性质，服主不对游戏体验或服务质量作出任何明示或暗示的保证。
+            </li>
+          </ul>
+
+          <h3 class="mt-16"><span class="section-num">4.</span> 个人信息处理</h3>
+          <p>
+            本服仅记录您的游戏 ID、IP 地址及登录时间，用于维护服务器安全和统计人数，<strong
+              >不会</strong
+            >
+            将这些信息用于商业目的或转交给第三方（法律强制要求除外）。群聊内个人隐私信息请自行保护，服主不承担群内交流引发的信息泄露责任。
+          </p>
+
+          <h3 class="mt-16"><span class="section-num">5.</span> 协议修改与解释</h3>
+          <p>
+            服主保留随时修订本免责协议的权利，修订后的协议将在群内公告或服务器登录提示中公布，并即时生效。您持续使用本服即视为接受修订内容。本协议的最终解释权归服主所有。
+          </p>
+
+          <h3 class="mt-16"><span class="section-num">6.</span> 联系与反馈</h3>
+          <p>
+            如您对本协议有任何疑问，或发现服务器存在安全隐患，欢迎通过 QQ 群
+            <strong class="text-gold">661436985</strong> 联系服主。服主将在工作之余尽力回复。
+          </p>
+
+          <div class="pixel-divider--thin" style="margin: 20px 0 10px"></div>
+          <p class="text-center text-muted" style="font-size: 0.8rem">
+            ⚡ JustMC · 一个纯粹的家 ⚡
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- FOOTER -->
+      <!-- ============================================================ -->
+      <div class="pixel-divider" style="margin-top: 32px"></div>
+      <footer class="text-center text-muted" style="font-size: 0.75rem; padding-top: 8px">
+        <p>© 2026 JustMC · 由 <span class="text-gold">LiveLoon</span> 维护 · 公益免费 · 正版验证</p>
+        <p style="font-size: 0.7rem; letter-spacing: 0.1em">⚡ 我的世界 · 纯净生存 ⚡</p>
+      </footer>
+    </div>
+    <!-- /container -->
+  </body>
+</html>

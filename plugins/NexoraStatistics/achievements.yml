@@ -1,0 +1,1202 @@
+achievements:
+# ==========================================
+# Playtime Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Novice Tier (新手) ----------
+  play_starterI:
+    display: "Novice Player I"
+    description: "Play for 5 minutes"
+    stat: playtime
+    threshold: 300
+    broadcast: false
+    rewards: []
+  play_starterII:
+    display: "Novice Player II"
+    description: "Play for 15 minutes"
+    stat: playtime
+    threshold: 900
+    broadcast: false
+    rewards: []
+  play_starterIII:
+    display: "Novice Player III"
+    description: "Play for 30 minutes"
+    stat: playtime
+    threshold: 1800
+    broadcast: false
+    rewards: []
+
+  # ---------- Regular Tier (常客) ----------
+  play_regularI:
+    display: "Regular Player I"
+    description: "Play for 1 hour"
+    stat: playtime
+    threshold: 3600
+    broadcast: false
+    rewards: []
+  play_regularII:
+    display: "Regular Player II"
+    description: "Play for 2 hours"
+    stat: playtime
+    threshold: 7200
+    broadcast: false
+    rewards: []
+  play_regularIII:
+    display: "Regular Player III"
+    description: "Play for 5 hours"
+    stat: playtime
+    threshold: 18000
+    broadcast: false
+    rewards: []
+
+  # ---------- Veteran Tier (资深) ----------
+  play_veteranI:
+    display: "Veteran Player I"
+    description: "Play for 10 hours"
+    stat: playtime
+    threshold: 36000
+    broadcast: false
+    rewards: []
+  play_veteranII:
+    display: "Veteran Player II"
+    description: "Play for 24 hours"
+    stat: playtime
+    threshold: 86400
+    broadcast: false
+    rewards: []
+  play_veteranIII:
+    display: "Veteran Player III"
+    description: "Play for 50 hours"
+    stat: playtime
+    threshold: 180000
+    broadcast: false
+    rewards: []
+
+  # ---------- Dedicated Tier (专注) ----------
+  play_dedicatedI:
+    display: "Dedicated Player I"
+    description: "Play for 100 hours"
+    stat: playtime
+    threshold: 360000
+    broadcast: true
+    rewards: []
+  play_dedicatedII:
+    display: "Dedicated Player II"
+    description: "Play for 200 hours"
+    stat: playtime
+    threshold: 720000
+    broadcast: true
+    rewards: []
+  play_dedicatedIII:
+    display: "Dedicated Player III"
+    description: "Play for 500 hours"
+    stat: playtime
+    threshold: 1800000
+    broadcast: true
+    rewards: []
+
+  # ---------- Elite Tier (精英) ----------
+  play_eliteI:
+    display: "Elite Player I"
+    description: "Play for 1,000 hours"
+    stat: playtime
+    threshold: 3600000
+    broadcast: true
+    rewards: []
+  play_eliteII:
+    display: "Elite Player II"
+    description: "Play for 1,500 hours"
+    stat: playtime
+    threshold: 5400000
+    broadcast: true
+    rewards: []
+  play_eliteIII:
+    display: "Elite Player III"
+    description: "Play for 2,000 hours"
+    stat: playtime
+    threshold: 7200000
+    broadcast: true
+    rewards: []
+
+  # ---------- Master Tier (大师) ----------
+  play_masterI:
+    display: "Master Player I"
+    description: "Play for 2,400 hours"
+    stat: playtime
+    threshold: 8640000
+    broadcast: true
+    rewards: []
+  play_masterII:
+    display: "Master Player II"
+    description: "Play for 2,700 hours"
+    stat: playtime
+    threshold: 9720000
+    broadcast: true
+    rewards: []
+  play_masterIII:
+    display: "Master Player III"
+    description: "Play for 2,900 hours"
+    stat: playtime
+    threshold: 10440000
+    broadcast: true
+    rewards: []
+
+  # ---------- Legend Tier (传奇 - 终极) ----------
+  play_legendI:
+    display: "<gold>✦ Legend Player I ✦</gold>"
+    description: "Play for 2,950 hours"
+    stat: playtime
+    threshold: 10620000
+    broadcast: true
+    rewards: []
+  play_legendII:
+    display: "<gold><bold>✦ Legend Player II (Ultimate) ✦</bold></gold>"
+    description: "Play for 3,000 hours"
+    stat: playtime
+    threshold: 10800000
+    broadcast: true
+    rewards: []
+
+# ==========================================
+# Builder Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Apprentice Tier (学徒) ----------
+  build_apprenticeI:
+    display: "Apprentice Builder I"
+    description: "Place 10 blocks"
+    stat: blocks_placed
+    threshold: 10
+    broadcast: false
+    rewards: []
+  build_apprenticeII:
+    display: "Apprentice Builder II"
+    description: "Place 50 blocks"
+    stat: blocks_placed
+    threshold: 50
+    broadcast: false
+    rewards: []
+  build_apprenticeIII:
+    display: "Apprentice Builder III"
+    description: "Place 100 blocks"
+    stat: blocks_placed
+    threshold: 100
+    broadcast: false
+    rewards: []
+
+  # ---------- Journeyman Tier (技工) ----------
+  build_journeymanI:
+    display: "Journeyman Builder I"
+    description: "Place 500 blocks"
+    stat: blocks_placed
+    threshold: 500
+    broadcast: false
+    rewards: []
+  build_journeymanII:
+    display: "Journeyman Builder II"
+    description: "Place 1,000 blocks"
+    stat: blocks_placed
+    threshold: 1000
+    broadcast: false
+    rewards: []
+  build_journeymanIII:
+    display: "Journeyman Builder III"
+    description: "Place 2,500 blocks"
+    stat: blocks_placed
+    threshold: 2500
+    broadcast: false
+    rewards: []
+
+  # ---------- Artisan Tier (工匠) ----------
+  build_artisanI:
+    display: "Artisan Builder I"
+    description: "Place 5,000 blocks"
+    stat: blocks_placed
+    threshold: 5000
+    broadcast: false
+    rewards: []
+  build_artisanII:
+    display: "Artisan Builder II"
+    description: "Place 10,000 blocks"
+    stat: blocks_placed
+    threshold: 10000
+    broadcast: false
+    rewards: []
+  build_artisanIII:
+    display: "Artisan Builder III"
+    description: "Place 20,000 blocks"
+    stat: blocks_placed
+    threshold: 20000
+    broadcast: false
+    rewards: []
+
+  # ---------- Foreman Tier (工长) ----------
+  build_foremanI:
+    display: "Foreman Builder I"
+    description: "Place 50,000 blocks"
+    stat: blocks_placed
+    threshold: 50000
+    broadcast: false
+    rewards: []
+  build_foremanII:
+    display: "Foreman Builder II"
+    description: "Place 100,000 blocks"
+    stat: blocks_placed
+    threshold: 100000
+    broadcast: true
+    rewards: []
+  build_foremanIII:
+    display: "Foreman Builder III"
+    description: "Place 200,000 blocks"
+    stat: blocks_placed
+    threshold: 200000
+    broadcast: true
+    rewards: []
+
+  # ---------- Architect Tier (建筑师) ----------
+  build_architectI:
+    display: "Architect Builder I"
+    description: "Place 500,000 blocks"
+    stat: blocks_placed
+    threshold: 500000
+    broadcast: true
+    rewards: []
+  build_architectII:
+    display: "Architect Builder II"
+    description: "Place 1,000,000 blocks"
+    stat: blocks_placed
+    threshold: 1000000
+    broadcast: true
+    rewards: []
+  build_architectIII:
+    display: "Architect Builder III"
+    description: "Place 2,000,000 blocks"
+    stat: blocks_placed
+    threshold: 2000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Senior Architect Tier (高级建筑师) ----------
+  build_seniorI:
+    display: "Senior Architect Builder I"
+    description: "Place 5,000,000 blocks"
+    stat: blocks_placed
+    threshold: 5000000
+    broadcast: true
+    rewards: []
+  build_seniorII:
+    display: "Senior Architect Builder II"
+    description: "Place 10,000,000 blocks"
+    stat: blocks_placed
+    threshold: 10000000
+    broadcast: true
+    rewards: []
+  build_seniorIII:
+    display: "Senior Architect Builder III"
+    description: "Place 15,000,000 blocks"
+    stat: blocks_placed
+    threshold: 15000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Master Builder Tier (建筑大师 - 终极) ----------
+  build_masterI:
+    display: "<gold>✦ Master Builder I ✦</gold>"
+    description: "Place 20,000,000 blocks"
+    stat: blocks_placed
+    threshold: 20000000
+    broadcast: true
+    rewards: []
+  build_masterII:
+    display: "<gold><bold>✦ Master Builder II (Ultimate) ✦</bold></gold>"
+    description: "Place 30,000,000 blocks"
+    stat: blocks_placed
+    threshold: 30000000
+    broadcast: true
+    rewards: []
+
+# ==========================================
+# Mob Kill Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Novice Tier (新手) ----------
+  kill_noviceI:
+    display: "Novice Killer I"
+    description: "Kill 10 mobs"
+    stat: mob_kills
+    threshold: 10
+    broadcast: false
+    rewards: []
+  kill_noviceII:
+    display: "Novice Killer II"
+    description: "Kill 50 mobs"
+    stat: mob_kills
+    threshold: 50
+    broadcast: false
+    rewards: []
+  kill_noviceIII:
+    display: "Novice Killer III"
+    description: "Kill 100 mobs"
+    stat: mob_kills
+    threshold: 100
+    broadcast: false
+    rewards: []
+
+  # ---------- Warrior Tier (战士) ----------
+  kill_warriorI:
+    display: "Warrior Killer I"
+    description: "Kill 250 mobs"
+    stat: mob_kills
+    threshold: 250
+    broadcast: false
+    rewards: []
+  kill_warriorII:
+    display: "Warrior Killer II"
+    description: "Kill 500 mobs"
+    stat: mob_kills
+    threshold: 500
+    broadcast: false
+    rewards: []
+  kill_warriorIII:
+    display: "Warrior Killer III"
+    description: "Kill 1,000 mobs"
+    stat: mob_kills
+    threshold: 1000
+    broadcast: false
+    rewards: []
+
+  # ---------- Veteran Tier (老兵) ----------
+  kill_veteranI:
+    display: "Veteran Killer I"
+    description: "Kill 2,500 mobs"
+    stat: mob_kills
+    threshold: 2500
+    broadcast: false
+    rewards: []
+  kill_veteranII:
+    display: "Veteran Killer II"
+    description: "Kill 5,000 mobs"
+    stat: mob_kills
+    threshold: 5000
+    broadcast: false
+    rewards: []
+  kill_veteranIII:
+    display: "Veteran Killer III"
+    description: "Kill 10,000 mobs"
+    stat: mob_kills
+    threshold: 10000
+    broadcast: true
+    rewards: []
+
+  # ---------- Slayer Tier (屠戮者) ----------
+  kill_slayerI:
+    display: "Slayer Killer I"
+    description: "Kill 25,000 mobs"
+    stat: mob_kills
+    threshold: 25000
+    broadcast: true
+    rewards: []
+  kill_slayerII:
+    display: "Slayer Killer II"
+    description: "Kill 50,000 mobs"
+    stat: mob_kills
+    threshold: 50000
+    broadcast: true
+    rewards: []
+  kill_slayerIII:
+    display: "Slayer Killer III"
+    description: "Kill 100,000 mobs"
+    stat: mob_kills
+    threshold: 100000
+    broadcast: true
+    rewards: []
+
+  # ---------- Champion Tier (冠军) ----------
+  kill_championI:
+    display: "Champion Killer I"
+    description: "Kill 150,000 mobs"
+    stat: mob_kills
+    threshold: 150000
+    broadcast: true
+    rewards: []
+  kill_championII:
+    display: "Champion Killer II"
+    description: "Kill 200,000 mobs"
+    stat: mob_kills
+    threshold: 200000
+    broadcast: true
+    rewards: []
+  kill_championIII:
+    display: "Champion Killer III"
+    description: "Kill 250,000 mobs"
+    stat: mob_kills
+    threshold: 250000
+    broadcast: true
+    rewards: []
+
+  # ---------- Hero Tier (英雄) ----------
+  kill_heroI:
+    display: "Hero Killer I"
+    description: "Kill 300,000 mobs"
+    stat: mob_kills
+    threshold: 300000
+    broadcast: true
+    rewards: []
+  kill_heroII:
+    display: "Hero Killer II"
+    description: "Kill 350,000 mobs"
+    stat: mob_kills
+    threshold: 350000
+    broadcast: true
+    rewards: []
+  kill_heroIII:
+    display: "Hero Killer III"
+    description: "Kill 400,000 mobs"
+    stat: mob_kills
+    threshold: 400000
+    broadcast: true
+    rewards: []
+
+  # ---------- Legend Tier (传奇 - 终极) ----------
+  kill_legendI:
+    display: "<gold>✦ Legend Killer I ✦</gold>"
+    description: "Kill 450,000 mobs"
+    stat: mob_kills
+    threshold: 450000
+    broadcast: true
+    rewards: []
+  kill_legendII:
+    display: "<gold><bold>✦ Legend Killer II (Ultimate) ✦</bold></gold>"
+    description: "Kill 500,000 mobs"
+    stat: mob_kills
+    threshold: 500000
+    broadcast: true
+    rewards: []
+# ==========================================
+# PvP Kill Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Novice Tier (新手) ----------
+  pvp_noviceI:
+    display: "PvP Novice I"
+    description: "Kill 1 player"
+    stat: player_kills
+    threshold: 1
+    broadcast: false
+    rewards: []
+  pvp_noviceII:
+    display: "PvP Novice II"
+    description: "Kill 5 players"
+    stat: player_kills
+    threshold: 5
+    broadcast: false
+    rewards: []
+  pvp_noviceIII:
+    display: "PvP Novice III"
+    description: "Kill 10 players"
+    stat: player_kills
+    threshold: 10
+    broadcast: false
+    rewards: []
+
+  # ---------- Duelist Tier (决斗者) ----------
+  pvp_duelistI:
+    display: "PvP Duelist I"
+    description: "Kill 25 players"
+    stat: player_kills
+    threshold: 25
+    broadcast: false
+    rewards: []
+  pvp_duelistII:
+    display: "PvP Duelist II"
+    description: "Kill 50 players"
+    stat: player_kills
+    threshold: 50
+    broadcast: false
+    rewards: []
+  pvp_duelistIII:
+    display: "PvP Duelist III"
+    description: "Kill 100 players"
+    stat: player_kills
+    threshold: 100
+    broadcast: true
+    rewards: []
+
+  # ---------- Berserker Tier (狂战士) ----------
+  pvp_berserkerI:
+    display: "PvP Berserker I"
+    description: "Kill 250 players"
+    stat: player_kills
+    threshold: 250
+    broadcast: true
+    rewards: []
+  pvp_berserkerII:
+    display: "PvP Berserker II"
+    description: "Kill 500 players"
+    stat: player_kills
+    threshold: 500
+    broadcast: true
+    rewards: []
+  pvp_berserkerIII:
+    display: "PvP Berserker III"
+    description: "Kill 1,000 players"
+    stat: player_kills
+    threshold: 1000
+    broadcast: true
+    rewards: []
+
+  # ---------- Gladiator Tier (角斗士) ----------
+  pvp_gladiatorI:
+    display: "PvP Gladiator I"
+    description: "Kill 1,500 players"
+    stat: player_kills
+    threshold: 1500
+    broadcast: true
+    rewards: []
+  pvp_gladiatorII:
+    display: "PvP Gladiator II"
+    description: "Kill 2,000 players"
+    stat: player_kills
+    threshold: 2000
+    broadcast: true
+    rewards: []
+  pvp_gladiatorIII:
+    display: "PvP Gladiator III"
+    description: "Kill 2,500 players"
+    stat: player_kills
+    threshold: 2500
+    broadcast: true
+    rewards: []
+
+  # ---------- Warlord Tier (战争领主) ----------
+  pvp_warlordI:
+    display: "PvP Warlord I"
+    description: "Kill 3,000 players"
+    stat: player_kills
+    threshold: 3000
+    broadcast: true
+    rewards: []
+  pvp_warlordII:
+    display: "PvP Warlord II"
+    description: "Kill 4,000 players"
+    stat: player_kills
+    threshold: 4000
+    broadcast: true
+    rewards: []
+  pvp_warlordIII:
+    display: "PvP Warlord III"
+    description: "Kill 5,000 players"
+    stat: player_kills
+    threshold: 5000
+    broadcast: true
+    rewards: []
+
+  # ---------- Assassin Tier (刺客) ----------
+  pvp_assassinI:
+    display: "PvP Assassin I"
+    description: "Kill 6,000 players"
+    stat: player_kills
+    threshold: 6000
+    broadcast: true
+    rewards: []
+  pvp_assassinII:
+    display: "PvP Assassin II"
+    description: "Kill 7,000 players"
+    stat: player_kills
+    threshold: 7000
+    broadcast: true
+    rewards: []
+  pvp_assassinIII:
+    display: "PvP Assassin III"
+    description: "Kill 8,000 players"
+    stat: player_kills
+    threshold: 8000
+    broadcast: true
+    rewards: []
+
+  # ---------- Godlike Tier (神级 - 终极) ----------
+  pvp_godlikeI:
+    display: "<gold>✦ PvP Godlike I ✦</gold>"
+    description: "Kill 9,000 players"
+    stat: player_kills
+    threshold: 9000
+    broadcast: true
+    rewards: []
+  pvp_godlikeII:
+    display: "<gold><bold>✦ PvP Godlike II (Ultimate) ✦</bold></gold>"
+    description: "Kill 10,000 players"
+    stat: player_kills
+    threshold: 10000
+    broadcast: true
+    rewards: []
+
+# ==========================================
+# Distance Walked Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Novice Tier (新手) ----------
+  dist_noviceI:
+    display: "Distance Novice I"
+    description: "Walk 100 meters"
+    stat: distance_total
+    threshold: 10000
+    broadcast: false
+    rewards: []
+  dist_noviceII:
+    display: "Distance Novice II"
+    description: "Walk 500 meters"
+    stat: distance_total
+    threshold: 50000
+    broadcast: false
+    rewards: []
+  dist_noviceIII:
+    display: "Distance Novice III"
+    description: "Walk 1 kilometer"
+    stat: distance_total
+    threshold: 100000
+    broadcast: false
+    rewards: []
+
+  # ---------- Explorer Tier (探索者) ----------
+  dist_explorerI:
+    display: "Distance Explorer I"
+    description: "Walk 2.5 kilometers"
+    stat: distance_total
+    threshold: 250000
+    broadcast: false
+    rewards: []
+  dist_explorerII:
+    display: "Distance Explorer II"
+    description: "Walk 5 kilometers"
+    stat: distance_total
+    threshold: 500000
+    broadcast: false
+    rewards: []
+  dist_explorerIII:
+    display: "Distance Explorer III"
+    description: "Walk 10 kilometers"
+    stat: distance_total
+    threshold: 1000000
+    broadcast: false
+    rewards: []
+
+  # ---------- Wanderer Tier (漫游者) ----------
+  dist_wandererI:
+    display: "Distance Wanderer I"
+    description: "Walk 25 kilometers"
+    stat: distance_total
+    threshold: 2500000
+    broadcast: false
+    rewards: []
+  dist_wandererII:
+    display: "Distance Wanderer II"
+    description: "Walk 50 kilometers"
+    stat: distance_total
+    threshold: 5000000
+    broadcast: false
+    rewards: []
+  dist_wandererIII:
+    display: "Distance Wanderer III"
+    description: "Walk 100 kilometers"
+    stat: distance_total
+    threshold: 10000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Pathfinder Tier (探路者) ----------
+  dist_pathfinderI:
+    display: "Distance Pathfinder I"
+    description: "Walk 250 kilometers"
+    stat: distance_total
+    threshold: 25000000
+    broadcast: true
+    rewards: []
+  dist_pathfinderII:
+    display: "Distance Pathfinder II"
+    description: "Walk 500 kilometers"
+    stat: distance_total
+    threshold: 50000000
+    broadcast: true
+    rewards: []
+  dist_pathfinderIII:
+    display: "Distance Pathfinder III"
+    description: "Walk 1,000 kilometers"
+    stat: distance_total
+    threshold: 100000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Surveyor Tier (测量者) ----------
+  dist_surveyorI:
+    display: "Distance Surveyor I"
+    description: "Walk 2,500 kilometers"
+    stat: distance_total
+    threshold: 250000000
+    broadcast: true
+    rewards: []
+  dist_surveyorII:
+    display: "Distance Surveyor II"
+    description: "Walk 5,000 kilometers"
+    stat: distance_total
+    threshold: 500000000
+    broadcast: true
+    rewards: []
+  dist_surveyorIII:
+    display: "Distance Surveyor III"
+    description: "Walk 10,000 kilometers"
+    stat: distance_total
+    threshold: 1000000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Voyager Tier (远行者) ----------
+  dist_voyagerI:
+    display: "Distance Voyager I"
+    description: "Walk 15,000 kilometers"
+    stat: distance_total
+    threshold: 1500000000
+    broadcast: true
+    rewards: []
+  dist_voyagerII:
+    display: "Distance Voyager II"
+    description: "Walk 20,000 kilometers"
+    stat: distance_total
+    threshold: 2000000000
+    broadcast: true
+    rewards: []
+  dist_voyagerIII:
+    display: "Distance Voyager III"
+    description: "Walk 30,000 kilometers"
+    stat: distance_total
+    threshold: 3000000000
+    broadcast: true
+    rewards: []
+
+  # ---------- Legendary Trekker Tier (传奇旅者 - 终极) ----------
+  dist_legendI:
+    display: "<gold>✦ Distance Legendary Trekker I ✦</gold>"
+    description: "Walk 40,000 kilometers"
+    stat: distance_total
+    threshold: 4000000000
+    broadcast: true
+    rewards: []
+  dist_legendII:
+    display: "<gold><bold>✦ Distance Legendary Trekker II (Ultimate) ✦</bold></gold>"
+    description: "Walk 50,000 kilometers"
+    stat: distance_total
+    threshold: 5000000000
+    broadcast: true
+    rewards: []
+
+# ==========================================
+# Diamond Mined Tiered Achievements (Full Rework)
+# 7 Tiers · 20 Sub-Achievements
+# ==========================================
+
+  # ---------- Novice Tier (新手) ----------
+  diamond_noviceI:
+    display: "Diamond Novice I"
+    description: "Mine 1 diamond"
+    stat: diamond_mined
+    threshold: 1
+    broadcast: false
+    rewards: []
+  diamond_noviceII:
+    display: "Diamond Novice II"
+    description: "Mine 5 diamonds"
+    stat: diamond_mined
+    threshold: 5
+    broadcast: false
+    rewards: []
+  diamond_noviceIII:
+    display: "Diamond Novice III"
+    description: "Mine 10 diamonds"
+    stat: diamond_mined
+    threshold: 10
+    broadcast: false
+    rewards: []
+
+  # ---------- Diamond Discoverer Tier (钻石矿工) ----------
+  diamond_minerI:
+    display: "Diamond Discoverer I"
+    description: "Mine 25 diamonds"
+    stat: diamond_mined
+    threshold: 25
+    broadcast: false
+    rewards: []
+  diamond_minerII:
+    display: "Diamond Discoverer II"
+    description: "Mine 50 diamonds"
+    stat: diamond_mined
+    threshold: 50
+    broadcast: false
+    rewards: []
+  diamond_minerIII:
+    display: "Diamond Discoverer III"
+    description: "Mine 100 diamonds"
+    stat: diamond_mined
+    threshold: 100
+    broadcast: true
+    rewards: []
+
+  # ---------- Diamond Expert Tier (钻石专家) ----------
+  diamond_expertI:
+    display: "Diamond Expert I"
+    description: "Mine 250 diamonds"
+    stat: diamond_mined
+    threshold: 250
+    broadcast: true
+    rewards: []
+  diamond_expertII:
+    display: "Diamond Expert II"
+    description: "Mine 500 diamonds"
+    stat: diamond_mined
+    threshold: 500
+    broadcast: true
+    rewards: []
+  diamond_expertIII:
+    display: "Diamond Expert III"
+    description: "Mine 1,000 diamonds"
+    stat: diamond_mined
+    threshold: 1000
+    broadcast: true
+    rewards: []
+
+  # ---------- Diamond Lord Tier (钻石领主) ----------
+  diamond_lordI:
+    display: "Diamond Lord I"
+    description: "Mine 1,500 diamonds"
+    stat: diamond_mined
+    threshold: 1500
+    broadcast: true
+    rewards: []
+  diamond_lordII:
+    display: "Diamond Lord II"
+    description: "Mine 2,000 diamonds"
+    stat: diamond_mined
+    threshold: 2000
+    broadcast: true
+    rewards: []
+  diamond_lordIII:
+    display: "Diamond Lord III"
+    description: "Mine 2,500 diamonds"
+    stat: diamond_mined
+    threshold: 2500
+    broadcast: true
+    rewards: []
+
+  # ---------- Diamond Magnate Tier (钻石大亨) ----------
+  diamond_magnateI:
+    display: "Diamond Magnate I"
+    description: "Mine 3,000 diamonds"
+    stat: diamond_mined
+    threshold: 3000
+    broadcast: true
+    rewards: []
+  diamond_magnateII:
+    display: "Diamond Magnate II"
+    description: "Mine 3,500 diamonds"
+    stat: diamond_mined
+    threshold: 3500
+    broadcast: true
+    rewards: []
+  diamond_magnateIII:
+    display: "Diamond Magnate III"
+    description: "Mine 4,000 diamonds"
+    stat: diamond_mined
+    threshold: 4000
+    broadcast: true
+    rewards: []
+
+  # ---------- Diamond Baron Tier (钻石男爵) ----------
+  diamond_baronI:
+    display: "Diamond Baron I"
+    description: "Mine 4,200 diamonds"
+    stat: diamond_mined
+    threshold: 4200
+    broadcast: true
+    rewards: []
+  diamond_baronII:
+    display: "Diamond Baron II"
+    description: "Mine 4,500 diamonds"
+    stat: diamond_mined
+    threshold: 4500
+    broadcast: true
+    rewards: []
+  diamond_baronIII:
+    display: "Diamond Baron III"
+    description: "Mine 4,800 diamonds"
+    stat: diamond_mined
+    threshold: 4800
+    broadcast: true
+    rewards: []
+
+  # ---------- Diamond Emperor Tier (钻石帝王 - 终极) ----------
+  diamond_emperorI:
+    display: "<gold>✦ Diamond Emperor I ✦</gold>"
+    description: "Mine 4,900 diamonds"
+    stat: diamond_mined
+    threshold: 4900
+    broadcast: true
+    rewards: []
+  diamond_emperorII:
+    display: "<gold><bold>✦ Diamond Emperor II (Ultimate) ✦</bold></gold>"
+    description: "Mine 5,000 diamonds"
+    stat: diamond_mined
+    threshold: 5000
+    broadcast: true
+    rewards: []
+
+ # ==========================================
+# Miner Tiered Achievements (Full Rework)
+# 10 Tiers, 30+ Sub-Achievements
+# ==========================================
+
+  # ---------- Bronze Tier ----------
+  miner_bronze:
+    display: "<gray>Bronze Miner I</gray>"
+    description: "Break 1,000 blocks"
+    stat: blocks_broken
+    threshold: 1000
+    broadcast: false
+    rewards: []
+  miner_bronzeII:
+    display: "<gray>Bronze Miner II</gray>"
+    description: "Break 2,500 blocks"
+    stat: blocks_broken
+    threshold: 2500
+    broadcast: false
+    rewards: []
+
+  # ---------- Silver Tier ----------
+  miner_silver:
+    display: "<white>Silver Miner I</white>"
+    description: "Break 5,000 blocks"
+    stat: blocks_broken
+    threshold: 5000
+    broadcast: false
+    rewards: []
+  miner_silverII:
+    display: "<white>Silver Miner II</white>"
+    description: "Break 10,000 blocks"
+    stat: blocks_broken
+    threshold: 10000
+    broadcast: false
+    rewards: []
+
+  # ---------- Gold Tier ----------
+  miner_gold:
+    display: "<gold>Gold Miner I</gold>"
+    description: "Break 25,000 blocks"
+    stat: blocks_broken
+    threshold: 25000
+    broadcast: false
+    rewards: []
+  miner_goldII:
+    display: "<gold>Gold Miner II</gold>"
+    description: "Break 50,000 blocks"
+    stat: blocks_broken
+    threshold: 50000
+    broadcast: false
+    rewards: []
+  miner_goldIII:
+    display: "<gold>Gold Miner III</gold>"
+    description: "Break 75,000 blocks"
+    stat: blocks_broken
+    threshold: 75000
+    broadcast: false
+    rewards: []
+
+  # ---------- Platinum Tier ----------
+  miner_platinum:
+    display: "<aqua>Platinum Miner I</aqua>"
+    description: "Break 100,000 blocks"
+    stat: blocks_broken
+    threshold: 100000
+    broadcast: false
+    rewards: []
+  miner_platinumII:
+    display: "<aqua>Platinum Miner II</aqua>"
+    description: "Break 150,000 blocks"
+    stat: blocks_broken
+    threshold: 150000
+    broadcast: false
+    rewards: []
+  miner_platinumIII:
+    display: "<aqua>Platinum Miner III</aqua>"
+    description: "Break 200,000 blocks"
+    stat: blocks_broken
+    threshold: 200000
+    broadcast: false
+    rewards: []
+
+  # ---------- Diamond Tier ----------
+  miner_diamond:
+    display: "<dark_aqua>Diamond Miner I</dark_aqua>"
+    description: "Break 300,000 blocks"
+    stat: blocks_broken
+    threshold: 300000
+    broadcast: false
+    rewards: []
+  miner_diamondII:
+    display: "<dark_aqua>Diamond Miner II</dark_aqua>"
+    description: "Break 400,000 blocks"
+    stat: blocks_broken
+    threshold: 400000
+    broadcast: false
+    rewards: []
+  miner_diamondIII:
+    display: "<dark_aqua>Diamond Miner III</dark_aqua>"
+    description: "Break 500,000 blocks"
+    stat: blocks_broken
+    threshold: 500000
+    broadcast: false
+    rewards: []
+
+  # ---------- Master Tier ----------
+  miner_master:
+    display: "<dark_purple>Master Miner I</dark_purple>"
+    description: "Break 750,000 blocks"
+    stat: blocks_broken
+    threshold: 750000
+    broadcast: false
+    rewards: []
+  miner_masterII:
+    display: "<dark_purple>Master Miner II</dark_purple>"
+    description: "Break 1,000,000 blocks"
+    stat: blocks_broken
+    threshold: 1000000
+    broadcast: false
+    rewards: []
+  miner_masterIII:
+    display: "<dark_purple>Master Miner III</dark_purple>"
+    description: "Break 1,250,000 blocks"
+    stat: blocks_broken
+    threshold: 1250000
+    broadcast: false
+    rewards: []
+  miner_masterIV:
+    display: "<dark_purple>Master Miner IV</dark_purple>"
+    description: "Break 1,500,000 blocks"
+    stat: blocks_broken
+    threshold: 1500000
+    broadcast: false
+    rewards: []
+
+  # ---------- Legend Tier ----------
+  miner_legend:
+    display: "<red>Legend Miner I</red>"
+    description: "Break 2,000,000 blocks"
+    stat: blocks_broken
+    threshold: 2000000
+    broadcast: false
+    rewards: []
+  miner_legendII:
+    display: "<red>Legend Miner II</red>"
+    description: "Break 2,500,000 blocks"
+    stat: blocks_broken
+    threshold: 2500000
+    broadcast: false
+    rewards: []
+  miner_legendIII:
+    display: "<red>Legend Miner III</red>"
+    description: "Break 3,000,000 blocks"
+    stat: blocks_broken
+    threshold: 3000000
+    broadcast: false
+    rewards: []
+  miner_legendIV:
+    display: "<red>Legend Miner IV</red>"
+    description: "Break 3,500,000 blocks"
+    stat: blocks_broken
+    threshold: 3500000
+    broadcast: false
+    rewards: []
+
+  # ---------- Epic Tier ----------
+  miner_epic:
+    display: "<light_purple>Epic Miner I</light_purple>"
+    description: "Break 4,000,000 blocks"
+    stat: blocks_broken
+    threshold: 4000000
+    broadcast: false
+    rewards: []
+  miner_epicII:
+    display: "<light_purple>Epic Miner II</light_purple>"
+    description: "Break 4,500,000 blocks"
+    stat: blocks_broken
+    threshold: 4500000
+    broadcast: false
+    rewards: []
+  miner_epicIII:
+    display: "<light_purple>Epic Miner III</light_purple>"
+    description: "Break 5,000,000 blocks"
+    stat: blocks_broken
+    threshold: 5000000
+    broadcast: false
+    rewards: []
+
+  # ---------- Mythic Tier ----------
+  miner_mythic:
+    display: "<yellow>Mythic Miner I</yellow>"
+    description: "Break 6,000,000 blocks"
+    stat: blocks_broken
+    threshold: 6000000
+    broadcast: false
+    rewards: []
+  miner_mythicII:
+    display: "<yellow>Mythic Miner II</yellow>"
+    description: "Break 7,000,000 blocks"
+    stat: blocks_broken
+    threshold: 7000000
+    broadcast: false
+    rewards: []
+  miner_mythicIII:
+    display: "<yellow>Mythic Miner III</yellow>"
+    description: "Break 8,000,000 blocks"
+    stat: blocks_broken
+    threshold: 8000000
+    broadcast: false
+    rewards: []
+
+  # ---------- Transcendent Tier (Final) ----------
+  miner_transcendent:
+    display: "<dark_red>✦ Transcendent Miner I ✦</dark_red>"
+    description: "Break 8,500,000 blocks"
+    stat: blocks_broken
+    threshold: 8500000
+    broadcast: true
+    rewards: []
+  miner_transcendentII:
+    display: "<dark_red>✦ Transcendent Miner II ✦</dark_red>"
+    description: "Break 9,000,000 blocks"
+    stat: blocks_broken
+    threshold: 9000000
+    broadcast: true
+    rewards: []
+  miner_transcendentIII:
+    display: "<dark_red>✦ Transcendent Miner III ✦</dark_red>"
+    description: "Break 9,500,000 blocks"
+    stat: blocks_broken
+    threshold: 9500000
+    broadcast: true
+    rewards: []
+  miner_transcendentIV:
+    display: "<dark_red>✦ Transcendent Miner IV ✦</dark_red>"
+    description: "Break 10,000,000 blocks"
+    stat: blocks_broken
+    threshold: 10000000
+    broadcast: true
+    rewards: []
+  miner_transcendentV:
+    display: "<dark_red><bold>✦ Transcendent Miner V (Ultimate) ✦</bold></dark_red>"
+    description: "Break 12,000,000 blocks"
+    stat: blocks_broken
+    threshold: 12000000
+    broadcast: true
+    rewards: []

@@ -1,0 +1,44 @@
+# =====================================================================
+# NexoraStatistics milestones.
+#
+# Each entry below fires a PlayerMilestoneEvent + runs reward commands
+# when a stat crosses the threshold. Two flavours:
+#
+#   - fixed:     threshold: N                 (fires once when stat hits N)
+#   - recurring: threshold: N, every: M       (fires every M after N)
+#
+# Placeholders inside rewards:
+#   %player%      - the player's current name
+#   %uuid%        - their UUID
+#   %threshold%   - the threshold that was crossed
+#   %stat%        - the stat key (e.g. blocks_broken)
+# =====================================================================
+
+milestones:
+  veteran_player:
+    stat: playtime
+    threshold: 36000          # 10 hours, stored in seconds
+    display: "Veteran Player"
+    message: "You've played for 10 hours!"
+    broadcast: false
+    rewards:
+      - "give %player% golden_apple 1"
+      - "tell %player% Enjoy the snack."
+
+  miner_milestone:
+    stat: blocks_broken
+    threshold: 1000           # first marker
+    every: 10000              # then every 10k after that
+    display: "Mining Milestone"
+    message: "{threshold} blocks broken. Keep digging!"
+    broadcast: true
+    rewards:
+      - "give %player% iron_pickaxe 1"
+
+  pvp_legend:
+    stat: player_kills
+    threshold: 100
+    display: "PvP Legend"
+    message: "100 player kills. The arena bows."
+    broadcast: true
+    rewards: []

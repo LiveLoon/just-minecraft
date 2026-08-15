@@ -1,0 +1,258 @@
+Messages:
+  1:
+    LeaveMessage: ''
+    EnterMessage: '&5传送门被保护于破坏'
+  2:
+    LeaveMessage: ''
+    EnterMessage: '&3已进入 &n&l&5The End &e此平台被保护于破坏'
+  3:
+    LeaveMessage: ''
+    EnterMessage: ''
+  4:
+    LeaveMessage: Now leaving %residence.
+    EnterMessage: Welcome %player to %residence, owned by %owner.
+Flags:
+  1:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    fly: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  2:
+    container: false
+    bed: false
+    ignite: false
+    use: false
+    riding: false
+    button: false
+    hook: false
+    vehicleplacing: false
+    falldamage: false
+    explode: false
+    witherdestruction: true
+    skulk: false
+    vehicledestroy: false
+    harvest: false
+    witherdamage: true
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: false
+    lever: false
+    feed: true
+    fly: false
+    build: false
+    anchor: false
+    diode: false
+    witherspawn: true
+    tnt: false
+    leash: false
+    pistonprotection: false
+    tp: false
+    creeper: false
+  3:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  4:
+    container: false
+    bed: false
+    ignite: false
+    use: false
+    riding: false
+    animalkilling: false
+    healing: true
+    hook: false
+    vehicleplacing: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    fireball: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: false
+    feed: true
+    build: false
+    anchor: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  5:
+    container: false
+    door: false
+    shear: false
+    anvil: false
+    use: false
+    admin: false
+    riding: false
+    pressure: false
+    lever: false
+    button: false
+    fly: false
+    beacon: false
+    trade: false
+    vehicleplacing: false
+    build: false
+    diode: false
+    vehicledestroy: false
+    tp: false
+    leash: false
+  6:
+    tp: false
+  7:
+    container: false
+    bed: false
+    ignite: false
+    door: false
+    use: false
+    anvil: false
+    riding: false
+    button: false
+    lavaflow: false
+    hook: false
+    falldamage: false
+    explode: false
+    witherdestruction: false
+    copper: false
+    skulk: false
+    vehicledestroy: false
+    fireball: false
+    harvest: false
+    witherdamage: false
+    shear: false
+    firespread: false
+    destroy: false
+    anvilbreak: false
+    pvp: false
+    lever: false
+    copperoxidation: false
+    feed: true
+    fly: true
+    beacon: false
+    build: false
+    anchor: false
+    diode: false
+    witherspawn: false
+    tnt: false
+    leash: false
+    tp: false
+    creeper: false
+  8:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+Residences:
+  end_center:
+    TPLoc: -11.69:58.0:3.7:19.35:-136.5
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+      AreaFlags: 2
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1785283688615
+    Areas:
+      main: -16:0:-16:15:255:15
+  end_platform:
+    TPLoc: 100.02:49.0:0.44:-4.05:90.15
+    Messages: 2
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 3
+      AreaFlags: 4
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1784768834568
+    Areas:
+      main: 98:46:-2:102:51:2
+  end_shulker:
+    TPLoc: -5985.59:110.5:6465.4:0.0:43.05
+    Messages: 3
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 5
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+        564036bc-b901-438e-a88a-413e1ec46882: 6
+      AreaFlags: 7
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1785663735590
+    Areas:
+      main: -6016:0:6448:-5969:255:6495
+  modi:
+    TPLoc: 8732.66:87.0:-7685.86:15.9:97.45
+    Messages: 4
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        564036bc-b901-438e-a88a-413e1ec46882: 1
+      AreaFlags: 8
+      OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
+      OwnerLastKnownName: beafg
+    CreatedOn: 1786020169837
+    Areas:
+      main: 8727:0:-7689:8733:255:-7685
+  xht:
+    TPLoc: 220.34:49.5:7.46:16.5:-179.4
+    Messages: 4
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        ef80a196-e3f1-4f27-8a57-1cd569629631: 1
+      AreaFlags: 8
+      OwnerUUID: ef80a196-e3f1-4f27-8a57-1cd569629631
+      OwnerLastKnownName: logtT
+    CreatedOn: 1785753342962
+    Areas:
+      main: 219:0:6:221:255:8

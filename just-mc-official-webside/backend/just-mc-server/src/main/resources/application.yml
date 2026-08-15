@@ -1,0 +1,38 @@
+# 应用基础配置
+spring:
+  application:
+    name: just-mc-server          # 应用名称，便于识别
+  web:
+    resources:
+      static-locations:
+        - classpath:/static/
+        - classpath:/public/
+        - classpath:/dist/    # 添加这行
+# 服务器配置
+server:
+  port: 8080                     # 修改端口，避免与 8080 冲突
+  address: 0.0.0.0
+
+# 日志配置（可选）
+logging:
+  level:
+    root: INFO                   # 全局日志级别
+    org.just_mc_community: DEBUG # 自定义包日志级别，便于开发调试
+
+
+player:
+  api:
+#    url: http://localhost:5006/open-api/players
+    url: http://just-minecraft-26.2:3000/open-api/players
+
+
+
+backup:
+#  dir: /srv/just-minecraft/backups
+  dir: /app/backups
+
+
+stats:
+  api:
+#    base-url: http://localhost:34832/api
+    base-url: http://just-minecraft-26.2:34832/api

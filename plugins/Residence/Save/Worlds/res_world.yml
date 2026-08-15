@@ -1,0 +1,1465 @@
+Messages:
+  1:
+    LeaveMessage: Now leaving %residence.
+    EnterMessage: Welcome %player to %residence, owned by %owner.
+  2:
+    LeaveMessage: Now leaving %residence.
+    EnterMessage: 欢迎来到gooderan的领地
+  3:
+    LeaveMessage: ''
+    EnterMessage: '&e欢迎 &l&a%player&e &e进入 &l&5开拓城快速交通'
+  4:
+    LeaveMessage: ''
+    EnterMessage: ''
+  5:
+    LeaveMessage: '&a离开保护范围'
+    EnterMessage: '&aWelcome &5%player &a这里是&6新手村'
+Flags:
+  1:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    fly: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  2:
+    container: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    fly: true
+    beacon: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    chat: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  3:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  4:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  5:
+    container: false
+    bed: false
+    ignite: false
+    door: false
+    use: false
+    riding: false
+    animalkilling: false
+    lavaflow: false
+    hook: false
+    falldamage: true
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    flowinprotection: false
+    coords: true
+    chorustp: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: false
+    enderpearl: false
+    feed: true
+    fly: true
+    build: false
+    fallinprotection: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  6:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: true
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  7:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    nomobs: true
+    fly: true
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  8:
+    container: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    admin: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    beacon: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    chat: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  9:
+    container: true
+    ignite: false
+    use: true
+    icemelt: false
+    golemopenchest: true
+    healing: true
+    hook: false
+    explode: false
+    snowtrail: true
+    vehicledestroy: true
+    trample: false
+    nmonsters: false
+    chorustp: false
+    witherdamage: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    visualizer: true
+    lever: false
+    pressure: false
+    nomobs: true
+    feed: true
+    witherspawn: false
+    tnt: false
+    pistonprotection: false
+    creeper: false
+    note: false
+    anvil: false
+    riding: false
+    sun: true
+    phantomspawn: false
+    button: false
+    iceform: false
+    vehicleplacing: true
+    falldamage: false
+    witherdestruction: false
+    copper: false
+    skulk: true
+    fireball: false
+    shear: false
+    anvilbreak: false
+    copperoxidation: false
+    enderpearl: false
+    fly: true
+    build: false
+    flowerpot: false
+    anchor: false
+    leash: false
+    tp: true
+    smonsters: false
+  10:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    place: true
+    leash: true
+    tp: true
+  11:
+    tp: true
+  12:
+    container: false
+    ignite: false
+    damage: true
+    use: true
+    riding: false
+    animalkilling: true
+    hook: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    place: false
+    harvest: false
+    move: true
+    shear: false
+    nanimals: true
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    fly: true
+    beacon: true
+    build: false
+    anchor: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  13:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    monsters: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    day: true
+    creeper: false
+  14:
+    container: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    admin: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    fly: true
+    beacon: true
+    hook: true
+    trade: true
+    mobkilling: true
+    build: true
+    chat: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  15:
+    container: false
+    bed: false
+    ignite: false
+    use: false
+    anvil: false
+    riding: false
+    hook: false
+    falldamage: false
+    explode: false
+    witherdestruction: false
+    copper: false
+    skulk: false
+    vehicledestroy: false
+    fireball: false
+    harvest: false
+    witherdamage: false
+    shear: false
+    firespread: false
+    anvilbreak: false
+    pvp: false
+    copperoxidation: false
+    feed: true
+    fly: false
+    elytra: true
+    build: false
+    witherspawn: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  16:
+    container: true
+    ignite: true
+    shear: true
+    use: true
+    admin: true
+    destroy: true
+    riding: true
+    lever: true
+    pressure: true
+    hook: true
+    trade: true
+    vehicleplacing: true
+    build: true
+    vehicledestroy: true
+    tp: true
+    leash: true
+  17:
+    admin: true
+  18:
+    tp: true
+    admin: true
+  19:
+    container: false
+    ignite: false
+    note: false
+    use: false
+    riding: false
+    animalkilling: false
+    phantomspawn: false
+    hook: false
+    vehicleplacing: false
+    explode: false
+    witherdestruction: false
+    skulk: false
+    vehicledestroy: false
+    fireball: false
+    coords: false
+    harvest: false
+    witherdamage: false
+    shear: false
+    firespread: false
+    piston: false
+    destroy: false
+    pvp: false
+    pressure: false
+    lever: false
+    nomobs: true
+    feed: true
+    build: false
+    anchor: false
+    diode: false
+    witherspawn: false
+    tnt: false
+    leash: false
+    pistonprotection: false
+    tp: true
+    creeper: false
+  20:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    day: true
+    creeper: false
+  21:
+    container: false
+    ignite: false
+    damage: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  22:
+    container: false
+    bed: false
+    ignite: false
+    door: false
+    waterflow: true
+    animalfeeding: false
+    use: false
+    riding: false
+    sun: true
+    animalkilling: false
+    phantomspawn: false
+    hook: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    animals: false
+    day: true
+    fireball: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: false
+    feed: true
+    fly: false
+    build: false
+    elytra: true
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  23:
+    container: false
+    ignite: false
+    use: false
+    anvil: false
+    riding: false
+    phantomspawn: false
+    hook: false
+    vehicleplacing: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    anvilbreak: false
+    pvp: false
+    feed: true
+    fly: true
+    build: false
+    anchor: false
+    tnt: false
+    leash: false
+    tp: false
+    creeper: false
+  24:
+    hook: true
+    shear: true
+    build: true
+    use: true
+    admin: true
+    destroy: true
+    riding: true
+    place: true
+    animalkilling: true
+  25:
+    container: true
+    bed: true
+    ignite: false
+    shop: true
+    use: false
+    anvil: false
+    riding: false
+    hook: false
+    falldamage: false
+    explode: false
+    witherdestruction: false
+    cmonsters: true
+    copper: false
+    skulk: false
+    trample: false
+    nmonsters: false
+    fireball: false
+    chorustp: true
+    harvest: false
+    move: true
+    witherdamage: false
+    firespread: false
+    anvilbreak: false
+    monsters: false
+    pvp: false
+    copperoxidation: false
+    nomobs: true
+    enderpearl: true
+    feed: true
+    fly: false
+    anchor: false
+    fallinprotection: false
+    witherspawn: false
+    tnt: false
+    tp: true
+    creeper: false
+  26:
+    tp: false
+  27:
+    trade: true
+    mobkilling: false
+    tp: true
+    animalkilling: false
+  28:
+    container: false
+    bed: true
+    ignite: false
+    door: false
+    note: false
+    use: false
+    riding: false
+    phantomspawn: false
+    healing: true
+    hook: false
+    falldamage: false
+    witherdestruction: false
+    vehicledestroy: false
+    trample: false
+    skulk: false
+    day: false
+    coords: false
+    fireball: false
+    chorustp: false
+    harvest: false
+    witherdamage: false
+    shear: false
+    destroy: false
+    anvilbreak: false
+    pvp: false
+    visualizer: true
+    lever: false
+    pressure: false
+    brew: false
+    copperoxidation: false
+    enderpearl: false
+    feed: true
+    fly: true
+    trade: false
+    build: false
+    dragongrief: false
+    flowerpot: false
+    chat: true
+    anchor: false
+    enchant: true
+    witherspawn: false
+    diode: false
+    pistonprotection: false
+    leash: false
+    tp: false
+    creeper: false
+  29:
+    container: false
+    ignite: false
+    use: false
+    animalkilling: true
+    hook: false
+    vehicleplacing: false
+    explode: false
+    witherdestruction: false
+    copper: false
+    skulk: false
+    vehicledestroy: false
+    harvest: false
+    witherdamage: false
+    firespread: false
+    destroy: false
+    pvp: false
+    lever: false
+    copperoxidation: false
+    fly: false
+    build: false
+    witherspawn: false
+    diode: false
+    tnt: false
+    leash: false
+    tp: true
+    pistonprotection: false
+    creeper: false
+  30:
+    tp: true
+    diode: false
+    lever: false
+  31:
+    container: false
+    bed: false
+    ignite: false
+    use: false
+    anvil: false
+    riding: false
+    hook: false
+    falldamage: false
+    explode: false
+    copper: false
+    skulk: false
+    vehicledestroy: false
+    animals: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    anvilbreak: false
+    pvp: false
+    copperoxidation: false
+    feed: true
+    fly: false
+    build: false
+    anchor: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: true
+    creeper: false
+  32:
+    container: true
+    tp: true
+  33:
+    container: true
+    bed: true
+    ignite: true
+    door: true
+    use: true
+    admin: true
+    riding: true
+    animalkilling: true
+    hook: true
+    honey: true
+    vehicledestroy: true
+    harvest: true
+    move: true
+    shear: true
+    destroy: true
+    brew: true
+    grindstone: true
+    enderpearl: true
+    dye: true
+    fly: true
+    trade: true
+    mobkilling: true
+    build: true
+    elytra: true
+    leash: true
+    tp: true
+  34:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    feed: true
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  35:
+    container: false
+    ignite: false
+    use: false
+    riding: false
+    sun: false
+    animalkilling: false
+    phantomspawn: false
+    hook: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    day: true
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    pvp: false
+    fly: false
+    build: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  36:
+    container: true
+    ignite: true
+    harvest: true
+    move: true
+    shear: true
+    use: true
+    destroy: true
+    riding: true
+    animalkilling: true
+    hook: true
+    trade: true
+    beacon: true
+    mobkilling: true
+    build: true
+    chat: true
+    vehicledestroy: true
+    leash: true
+    tp: true
+  37:
+    container: false
+    ignite: false
+    damage: false
+    use: false
+    riding: false
+    animalkilling: false
+    hook: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    day: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    monsters: true
+    pvp: false
+    fly: true
+    mobkilling: false
+    build: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  38:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    monsters: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+Residences:
+  antilunar_home1:
+    TPLoc: -88.4:87.0:-148.78:24.45:111.73
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        732de462-9b38-4b10-a025-f2a25a11680f: 2
+        87f1cff8-2ba2-4fa0-80db-755db3cf9e4d: 2
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
+      AreaFlags: 3
+      OwnerUUID: b58e4c4f-75d2-4fcc-b646-439d2f039211
+      OwnerLastKnownName: Antilunar
+    CreatedOn: 1786269963644
+    Areas:
+      main: -92:-64:-162:-76:319:-138
+  beafg:
+    TPLoc: 1424.77:64.0:2691.64:14.4:70.8
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        564036bc-b901-438e-a88a-413e1ec46882: 4
+      AreaFlags: 5
+      OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
+      OwnerLastKnownName: beafg
+    CreatedOn: 1784767131333
+    Areas:
+      main: 1405:-64:2676:1427:319:2695
+  Blaz_F_:
+    TPLoc: -99.73:101.19:-200.85:39.45:81.9
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        87f1cff8-2ba2-4fa0-80db-755db3cf9e4d: 1
+      AreaFlags: 3
+      OwnerUUID: 87f1cff8-2ba2-4fa0-80db-755db3cf9e4d
+      OwnerLastKnownName: Blaz_F_
+    CreatedOn: 1786275890660
+    Areas:
+      main: -106:-64:-202:-99:319:-191
+  cun1:
+    TPLoc: -9625.36:64.0:6983.73:11.85:178.8
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+      AreaFlags: 6
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784784188182
+    Areas:
+      main: -9706:-64:6900:-9624:319:6984
+  cun2:
+    TPLoc: -9467.85:69.0:7303.27:24.0:-121.94
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+      AreaFlags: 7
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784784353331
+    Areas:
+      main: -9471:-64:7225:-9349:319:7305
+  dong1:
+    TPLoc: -9306.23:69.0:7161.16:25.65:126.91
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+      AreaFlags: 6
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784784304152
+    Areas:
+      main: -9349:-64:6951:-9306:319:7162
+  emfd:
+    TPLoc: -9445.5:64.0:7064.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 8
+      AreaFlags: 9
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784776226893
+    MainResidence: true
+    Areas:
+      main: -9540:-64:6948:-9353:319:7179
+  gooderan1:
+    TPLoc: -3247.76:96.88:6425.14:2.55:-176.54
+    Messages: 2
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 10
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 11
+      AreaFlags: 12
+      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
+      OwnerLastKnownName: gooderan
+    CreatedOn: 1784785315470
+    Areas:
+      main: -3375:-64:6297:-3120:319:6552
+  gooderan10:
+    TPLoc: -1800.37:136.0:-2465.56:90.0:-88.5
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 1
+      AreaFlags: 13
+      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
+      OwnerLastKnownName: gooderan
+    CreatedOn: 1786506977417
+    Areas:
+      main: -1928:-64:-2594:-1673:319:-2339
+  gooderan20:
+    TPLoc: -768.51:73.0:1096.39:2.4:-58.49
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 1
+        ef80a196-e3f1-4f27-8a57-1cd569629631: 2
+      AreaFlags: 13
+      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
+      OwnerLastKnownName: gooderan
+    CreatedOn: 1786719809643
+    Areas:
+      main: -896:-64:968:-641:319:1223
+  gooderan_1:
+    TPLoc: -3206.22:118.94:6176.3:18.6:3.62
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 4
+      AreaFlags: 6
+      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
+      OwnerLastKnownName: gooderan
+    CreatedOn: 1784869299217
+    Areas:
+      main: -3334:-64:6033:-3079:319:6288
+  klp:
+    TPLoc: 408.73:63.0:787.57:4.5:170.25
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        2e4361b2-bc47-446f-ac71-aa98f7704dfe: 2
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 14
+        564036bc-b901-438e-a88a-413e1ec46882: 1
+      AreaFlags: 15
+      OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
+      OwnerLastKnownName: beafg
+    CreatedOn: 1785926698986
+    Areas:
+      main: 392:-64:763:428:319:802
+  ktc:
+    TPLoc: 1423.3:66.0:2711.25:23.55:-100.5
+    Messages: 3
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        638630d7-ab29-4e7d-9cf3-9f307ca6f11e: 11
+        e0c8f79a-dec9-4884-b00c-58cec9678c5d: 11
+        00000000-0000-0000-0009-01f3fe2c9430: 17
+        2e4361b2-bc47-446f-ac71-aa98f7704dfe: 11
+        0853732e-2c96-40a7-905b-e2eec4a8a55c: 11
+        00000000-0000-0000-0009-01f9e9173d9b: 11
+        73798702-997f-403e-a01d-458386e872f0: 18
+        00000000-0000-0000-0009-01f679cd1de1: 11
+        732de462-9b38-4b10-a025-f2a25a11680f: 11
+        0048180c-f506-4db7-9aab-cbf71d799011: 16
+        1532289f-0b57-4f91-a411-23b6de971674: 11
+        53c77df1-552e-4450-bbc3-c97c720f42e0: 11
+        baf97252-bb30-4887-a797-67b9bce55ffd: 11
+        5c3a6c90-8981-4078-91c0-a66577cc20a8: 11
+        b24ac7b6-35c1-4eb9-92d6-7d804239830a: 11
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
+        a0e78e2b-bc96-4672-b69e-9301561b68e4: 11
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 18
+      AreaFlags: 19
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1784854202533
+    Areas:
+      main: 1416:-64:2705:1423:319:2717
+  Laohuang_kingdom:
+    TPLoc: 7652.57:68.0:-736.46:7.05:-105.6
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        00000000-0000-0000-0009-01fd5f5cbd43: 2
+        0853732e-2c96-40a7-905b-e2eec4a8a55c: 1
+      AreaFlags: 20
+      OwnerUUID: 0853732e-2c96-40a7-905b-e2eec4a8a55c
+      OwnerLastKnownName: Laohaung
+    CreatedOn: 1785159727289
+    Areas:
+      main: 7648:-64:-769:7689:319:-711
+  liveloon-badland:
+    TPLoc: 3697.19:86.0:-7500.55:44.7:90.9
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786443541171
+    Areas:
+      main: 3685:-64:-7513:3700:319:-7499
+  liveloon-home:
+    TPLoc: 4652.56:80.0:5708.78:47.4:-2.25
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786434654382
+    Areas:
+      main: 4501:-64:5607:4753:319:5809
+  liveloon-ice-island:
+    TPLoc: 6512.31:63.0:-9058.59:41.55:-169.64
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786445335888
+    Areas:
+      main: 6511:-64:-9062:6513:319:-9056
+  liveloon-pyramid:
+    TPLoc: 616.93:64.0:1536.12:52.5:53.1
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786279191407
+    Areas:
+      main: 515:-64:1435:770:319:1637
+  liveloon-salary-cat:
+    TPLoc: 5662.7:88.0:-1311.13:52.2:150.75
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786452998882
+    Areas:
+      main: 5655:-64:-1320:5698:319:-1308
+  liveloon-skyboard:
+    TPLoc: 5431.68:280.0:-1142.08:84.9:133.33
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786626619910
+    Areas:
+      main: 5430:-64:-1144:5433:319:-1142
+  liveloon-sunway:
+    TPLoc: 4829.06:73.0:-1908.41:25.95:158.55
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786544368141
+    Areas:
+      main: 4693:-64:-2033:4932:319:-1786
+  liveloon-sunway1:
+    TPLoc: 4936.52:82.0:-1803.47:58.65:31.33
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786624822759
+    Areas:
+      main: 4933:-64:-1805:5038:319:-1553
+  liveloon-sunway2:
+    TPLoc: 5036.9:84.0:-1550.15:77.4:-32.12
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786625200885
+    Areas:
+      main: 4981:-64:-1552:5137:319:-1300
+  liveloon-sunway3:
+    TPLoc: 5098.29:64.0:-1296.42:20.25:124.03
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786625332219
+    Areas:
+      main: 5046:-64:-1299:5201:319:-1046
+  liveloon-sunway4:
+    TPLoc: 5145.9:63.0:-1043.04:-61.95:-52.07
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786625470035
+    Areas:
+      main: 4994:-64:-1045:5197:319:-792
+  liveloon-sunway5:
+    TPLoc: 5046.08:63.0:-787.05:37.2:-89.27
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 21
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786625694831
+    Areas:
+      main: 4793:-64:-791:5047:319:-686
+  liveloon-sunway6:
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786626983331
+    Areas:
+      main: 4537:-64:-758:4792:319:-654
+  liveloon-sunway7:
+    TPLoc: 4533.68:55.0:-703.19:70.65:-5.27
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786627116105
+    Areas:
+      main: 4381:-64:-756:4536:319:-652
+  liveloon-sunway8:
+    TPLoc: 4940.67:81.0:-1811.51:30.6:-174.77
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1786627658135
+    Areas:
+      main: 4933:-64:-1863:4992:319:-1806
+  mgd:
+    TPLoc: -808.97:79.0:-535.66:18.0:-151.06
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        2e4361b2-bc47-446f-ac71-aa98f7704dfe: 2
+        564036bc-b901-438e-a88a-413e1ec46882: 1
+      AreaFlags: 22
+      OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
+      OwnerLastKnownName: beafg
+    CreatedOn: 1786627789554
+    Areas:
+      main: -853:-64:-771:-664:319:-531
+  modimen:
+    TPLoc: -8810.24:12.0:7665.7:21.9:-113.86
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+      AreaFlags: 6
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784867384926
+    Areas:
+      main: -8812:-64:7655:-8799:319:7665
+  ovwd_door_soul:
+    TPLoc: 10722.43:286.5:3144.71:-6.3:-176.27
+    Messages: 4
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+      AreaFlags: 23
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1785371005890
+    Areas:
+      main: 10704:-64:3119:10735:319:3151
+  ovwd_emfd_spawn:
+    TPLoc: 196.21:85.0:-24.16:32.7:160.35
+    Messages: 5
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
+        564036bc-b901-438e-a88a-413e1ec46882: 24
+      AreaFlags: 25
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1784996700665
+    Areas:
+      main: 162:-64:-50:236:319:1
+  ovwd_industry:
+    TPLoc: 10451.6:184.0:-2404.49:17.55:-84.27
+    Messages: 1
+    BlockSellPrice: 1.0
+    ChannelColor: Green
+    Permissions:
+      PlayerFlags:
+        00000000-0000-0000-0009-01f679cd1de1: 27
+        00000000-0000-0000-0009-01f3fe2c9430: 18
+        ef80a196-e3f1-4f27-8a57-1cd569629631: 11
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
+        da08c8c6-77dc-4aeb-947e-ee019b9268c7: 11
+        9314d942-fa72-4a59-9ddc-6aac2f759fc5: 11
+        564036bc-b901-438e-a88a-413e1ec46882: 26
+      AreaFlags: 28
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1784766726107
+    Areas:
+      main: 10416:-64:-2448:10511:319:-2337
+  ovwd_ocean_temple:
+    TPLoc: 4909.55:67.5:1117.36:20.85:-26.83
+    Messages: 1
+    BlockSellPrice: 1.0
+    Subzones:
+      idle:
+        TPLoc: 4912.5:184.0:1120.5:0.0:0.0
+        Messages: 4
+        Subzones:
+          tpset:
+            Messages: 1
+            Permissions:
+              PlayerFlags:
+                97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+              AreaFlags: 29
+              OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+              OwnerLastKnownName: Art_Oracles
+            CreatedOn: 1785832260760
+            Areas:
+              tpset: 4910:183:1118:4913:186:1121
+        Permissions:
+          PlayerFlags:
+            ef80a196-e3f1-4f27-8a57-1cd569629631: 30
+            97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+          AreaFlags: 3
+          OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+          OwnerLastKnownName: Art_Oracles
+        CreatedOn: 1785832216781
+        Areas:
+          idle: 4910:183:1118:4913:186:1121
+    Permissions:
+      PlayerFlags:
+        00000000-0000-0000-0009-01f3fe2c9430: 11
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
+      AreaFlags: 31
+      OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
+      OwnerLastKnownName: Art_Oracles
+    CreatedOn: 1785827458751
+    Areas:
+      main: 4883:-64:1091:4940:319:1148
+  si:
+    TPLoc: 1400.35:63.94:2836.5:14.87:-0.83
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        00000000-0000-0000-0009-01f679cd1de1: 33
+        0048180c-f506-4db7-9aab-cbf71d799011: 32
+      AreaFlags: 34
+      OwnerUUID: 00000000-0000-0000-0009-01f679cd1de1
+      OwnerLastKnownName: .siajx6333
+    CreatedOn: 1785928559137
+    Areas:
+      main: 1336:-64:2834:1402:319:2891
+  stj:
+    TPLoc: 389.12:71.0:2512.3:10.95:-170.41
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        564036bc-b901-438e-a88a-413e1ec46882: 1
+      AreaFlags: 35
+      OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
+      OwnerLastKnownName: beafg
+    CreatedOn: 1786672408857
+    Areas:
+      main: 386:-64:2494:399:319:2513
+  synarealand:
+    TPLoc: 5394.51:64.0:-1418.81:27.9:-19.65
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0853732e-2c96-40a7-905b-e2eec4a8a55c: 8
+        00000000-0000-0000-0009-01f2ca0984d7: 14
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 36
+      AreaFlags: 37
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1785068657123
+    MainResidence: true
+    Areas:
+      main: 5281:-64:-1569:5514:319:-1319
+  SyringaOblata:
+    TPLoc: 432.73:63.0:741.55:22.35:-56.85
+    Messages: 1
+    BlockSellPrice: 1.0
+    Subzones:
+      Bedroom:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            2e4361b2-bc47-446f-ac71-aa98f7704dfe: 1
+          AreaFlags: 3
+          OwnerUUID: 2e4361b2-bc47-446f-ac71-aa98f7704dfe
+          OwnerLastKnownName: LilacSwirr
+        CreatedOn: 1785681420545
+        Areas:
+          bedroom: 407:64:745:413:67:750
+      Lounge:
+        Messages: 1
+        Permissions:
+          PlayerFlags:
+            2e4361b2-bc47-446f-ac71-aa98f7704dfe: 1
+            564036bc-b901-438e-a88a-413e1ec46882: 2
+          AreaFlags: 3
+          OwnerUUID: 2e4361b2-bc47-446f-ac71-aa98f7704dfe
+          OwnerLastKnownName: LilacSwirr
+        CreatedOn: 1785681814740
+        Areas:
+          lounge: 408:68:744:412:70:750
+    Permissions:
+      PlayerFlags:
+        2e4361b2-bc47-446f-ac71-aa98f7704dfe: 1
+        b24ac7b6-35c1-4eb9-92d6-7d804239830a: 2
+        564036bc-b901-438e-a88a-413e1ec46882: 2
+      AreaFlags: 3
+      OwnerUUID: 2e4361b2-bc47-446f-ac71-aa98f7704dfe
+      OwnerLastKnownName: LilacSwirr
+    CreatedOn: 1785668411204
+    Areas:
+      main: 401:-64:728:460:319:754
+  TThome:
+    TPLoc: -3558.69:89.0:6465.45:61.35:-73.8
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        00000000-0000-0000-0009-01f679cd1de1: 2
+        ef80a196-e3f1-4f27-8a57-1cd569629631: 1
+      AreaFlags: 38
+      OwnerUUID: ef80a196-e3f1-4f27-8a57-1cd569629631
+      OwnerLastKnownName: logtT
+    CreatedOn: 1785734946243
+    Areas:
+      main: -3622:-64:6403:-3497:319:6558
+  xi:
+    TPLoc: -9543.11:68.0:6953.57:30.75:-5.23
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        1532289f-0b57-4f91-a411-23b6de971674: 4
+      AreaFlags: 7
+      OwnerUUID: 1532289f-0b57-4f91-a411-23b6de971674
+      OwnerLastKnownName: EMFD666
+    CreatedOn: 1784784508253
+    Areas:
+      main: -9593:-64:6953:-9541:319:7148
