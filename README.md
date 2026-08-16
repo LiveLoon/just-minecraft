@@ -57,6 +57,7 @@ just-minecraft/
 │   ├── paper-global.yml
 │   └── paper-world-defaults.yml
 ├── logs/                     # 服务器日志（已压缩归档）
+├── just-mc-official-webside  # 官网前后端
 ├── plugins/                  # 插件安装目录
 │   ├── BlueMap/              # 地图插件配置
 │   ├── Essentials/           # 基础管理插件
@@ -67,7 +68,7 @@ just-minecraft/
 ├── world_the_nether/         # 地狱世界
 ├── server.properties         # 服务器核心配置
 ├── paper-26.2-40.jar         # Paper 服务端核心
-├── just-mc-server-1.0-SNAPSHOT.jar  # 自定义后端服务
+├── just-mc-server-1.0-SNAPSHOT.jar  # 官网后端jar包
 ├── docker-compose.yml        # Docker Compose 部署文件
 ├── Dockerfile                # 容器构建文件
 ├── start.sh                  # （示例）启动脚本
@@ -78,18 +79,49 @@ just-minecraft/
 
 ---
 
-## 🛠️ 部署与维护
+## 🛠️ 服务器部署与维护
 
 ### 环境要求
 - **Java 21+**（推荐使用 OpenJDK 21）
 - **Docker & Docker compose** 
 - **系统**：Linux / Windows / macOS（推荐 Linux 生产环境）
 - 下载 **paper-26.2-40.jar** 放在 项目的根目录下
-- 编译 just-mc-official-webside/backend/just-mc-server的web项目服务端  **just-mc-server-1.0-SNAPSHOT.jar** 放在 项目的根目录下
+- **Apache Maven 3.9.16** 
+- **NodeJs v18.20.8**
+- **Gradle 9.6.1**
 
-### 使用 Docker Compose 快速启动
+### 网站服务端部署
+
+```
+git clone https://github.com/LiveLoon/just-minecraft
+cd just-minecraft
+cd just-mc-official-webside/frontend/web/    
+npm install .
+npm run build 
+cp dist/ ../../backend/just-mc-server/src/main/resources/ -rfv
+cd ../../../ 
+cd just-mc-official-webside/backend/just-mc-server/
+mvn package
+cp target/just-mc-server-1.0-SNAPSHOT.jar ../../../
+cd ../../../
+
+```
+
+### 安卓端编译打包
+
+```
+cd just-mc-official-webside/frontend/mobile/JustMC/
+/gradlew build
+```
+
+编译完成后 Android 安卓包在  app/build/outputs/apk  目录下
+
+###  Docker Compose 启动我的世界服务器
+
+需要回到项目的根目录
+
 ```bash
-git clone https://github.com/your-username/justmc-server.git
+
 cd justmc-server
 docker-compose up -d
 ```

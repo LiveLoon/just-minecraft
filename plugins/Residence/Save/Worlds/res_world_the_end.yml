@@ -231,7 +231,7 @@ Residences:
     Areas:
       main: -6016:0:6448:-5969:255:6495
   modi:
-    TPLoc: 8732.66:87.0:-7685.86:15.9:97.45
+    TPLoc: 9720.68:95.0:-5057.85:9.75:178.6
     Messages: 4
     BlockSellPrice: 1.0
     Permissions:
@@ -240,9 +240,9 @@ Residences:
       AreaFlags: 8
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
-    CreatedOn: 1786020169837
+    CreatedOn: 1786801762115
     Areas:
-      main: 8727:0:-7689:8733:255:-7685
+      main: 9719:0:-5063:9722:255:-5057
   xht:
     TPLoc: 220.34:49.5:7.46:16.5:-179.4
     Messages: 4
