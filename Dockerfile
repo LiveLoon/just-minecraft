@@ -18,7 +18,7 @@ RUN mkdir -p /root/backups
 RUN cat > /usr/local/bin/backup.sh << 'EOF'
 #!/bin/bash
 # 先压缩最新备份（覆盖 world_latest.zip）
-zip -rv9 /root/backups/world_latest.zip /root/world
+zip -rv0 /root/backups/world_latest.zip /root/world
 # 判断今天是否是周一（%u 返回 1-7，1 代表周一）
 if [ $(date +%u) -eq 1 ]; then
     # 复制为带日期的归档，保留每周一的一份快照
