@@ -367,8 +367,8 @@ Flags:
     move: true
     shear: true
     use: true
-    admin: true
     destroy: true
+    admin: true
     riding: true
     animalkilling: true
     fly: true
@@ -1107,6 +1107,7 @@ Residences:
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
         a0e78e2b-bc96-4672-b69e-9301561b68e4: 13
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 20
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 13
       AreaFlags: 21
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
@@ -1466,6 +1467,19 @@ Residences:
     CreatedOn: 1787234050413
     Areas:
       main: 1332:-64:2834:1397:319:2892
+  spawn_point:
+    TPLoc: 197.85:63.0:-2432.24:35.55:-174.0
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
+      AreaFlags: 6
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1787802646182
+    Areas:
+      main: 185:-64:-2444:220:319:-2400
   synarealand:
     TPLoc: 5394.51:64.0:-1418.81:27.9:-19.65
     Messages: 1
@@ -1475,6 +1489,7 @@ Residences:
         0853732e-2c96-40a7-905b-e2eec4a8a55c: 10
         00000000-0000-0000-0009-01f2ca0984d7: 16
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 35
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 16
       AreaFlags: 36
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
