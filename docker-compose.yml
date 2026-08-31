@@ -1,11 +1,10 @@
 
-
-
 services:
   minecraft-26.2:
     build: .
     container_name: just-minecraft-26.2
     ports:
+      - "5005:22"
       - "25265:25565"
       - "24454:24454/udp"
       - "24454:24454/tcp"

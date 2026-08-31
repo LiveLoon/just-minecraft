@@ -309,6 +309,12 @@ Flags:
   13:
     tp: true
   14:
+    container: true
+    move: true
+    tp: true
+    build: true
+    use: true
+  15:
     container: false
     ignite: false
     damage: true
@@ -335,9 +341,9 @@ Flags:
     tnt: false
     leash: false
     pistonprotection: true
-    tp: false
+    tp: true
     creeper: false
-  15:
+  16:
     container: false
     ignite: false
     harvest: false
@@ -361,7 +367,7 @@ Flags:
     tp: false
     day: true
     creeper: false
-  16:
+  17:
     container: true
     harvest: true
     move: true
@@ -381,7 +387,7 @@ Flags:
     vehicledestroy: true
     leash: true
     tp: true
-  17:
+  18:
     container: false
     bed: false
     ignite: false
@@ -413,7 +419,7 @@ Flags:
     pistonprotection: true
     tp: false
     creeper: false
-  18:
+  19:
     container: true
     ignite: true
     shear: true
@@ -430,12 +436,12 @@ Flags:
     vehicledestroy: true
     tp: true
     leash: true
-  19:
-    admin: true
   20:
-    tp: true
     admin: true
   21:
+    tp: true
+    admin: true
+  22:
     container: false
     ignite: false
     note: false
@@ -472,7 +478,7 @@ Flags:
     pistonprotection: false
     tp: true
     creeper: false
-  22:
+  23:
     container: false
     ignite: false
     harvest: false
@@ -497,7 +503,7 @@ Flags:
     tp: false
     day: true
     creeper: false
-  23:
+  24:
     container: false
     ignite: false
     damage: false
@@ -520,7 +526,7 @@ Flags:
     pistonprotection: true
     tp: false
     creeper: false
-  24:
+  25:
     container: false
     ignite: false
     animalfeeding: true
@@ -553,7 +559,7 @@ Flags:
     pistonprotection: true
     tp: true
     creeper: false
-  25:
+  26:
     container: false
     ignite: false
     use: false
@@ -579,7 +585,7 @@ Flags:
     leash: false
     tp: false
     creeper: false
-  26:
+  27:
     hook: true
     shear: true
     build: true
@@ -589,7 +595,7 @@ Flags:
     riding: true
     place: true
     animalkilling: true
-  27:
+  28:
     container: true
     bed: true
     ignite: false
@@ -626,14 +632,14 @@ Flags:
     tnt: false
     tp: true
     creeper: false
-  28:
-    tp: false
   29:
+    tp: false
+  30:
     trade: true
     mobkilling: false
     tp: true
     animalkilling: false
-  30:
+  31:
     container: false
     bed: true
     ignite: false
@@ -680,7 +686,7 @@ Flags:
     leash: false
     tp: false
     creeper: false
-  31:
+  32:
     container: false
     ignite: false
     use: false
@@ -708,11 +714,11 @@ Flags:
     tp: true
     pistonprotection: false
     creeper: false
-  32:
+  33:
     tp: true
     diode: false
     lever: false
-  33:
+  34:
     container: false
     bed: false
     ignite: false
@@ -742,7 +748,7 @@ Flags:
     pistonprotection: true
     tp: true
     creeper: false
-  34:
+  35:
     container: false
     ignite: false
     harvest: false
@@ -766,7 +772,7 @@ Flags:
     pistonprotection: true
     tp: true
     creeper: false
-  35:
+  36:
     container: true
     ignite: true
     harvest: true
@@ -785,7 +791,7 @@ Flags:
     vehicledestroy: true
     leash: true
     tp: true
-  36:
+  37:
     container: false
     ignite: false
     damage: false
@@ -811,7 +817,7 @@ Flags:
     pistonprotection: true
     tp: false
     creeper: false
-  37:
+  38:
     container: false
     ignite: false
     harvest: false
@@ -834,7 +840,7 @@ Flags:
     pistonprotection: true
     tp: false
     creeper: false
-  38:
+  39:
     container: false
     ignite: false
     harvest: false
@@ -852,13 +858,13 @@ Flags:
     explode: false
     skulk: false
     vehicledestroy: false
-    tnt: false
+    tnt: true
     leash: false
     pistonprotection: true
     tp: true
     day: true
     creeper: false
-  39:
+  40:
     container: false
     ignite: false
     harvest: false
@@ -883,7 +889,7 @@ Flags:
     tp: false
     day: true
     creeper: false
-  40:
+  41:
     container: false
     ignite: false
     harvest: false
@@ -1022,8 +1028,9 @@ Residences:
     Permissions:
       PlayerFlags:
         0048180c-f506-4db7-9aab-cbf71d799011: 12
+        50d2f0a8-1cef-4c4d-98dc-acd3e7d65b0f: 14
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 13
-      AreaFlags: 14
+      AreaFlags: 15
       OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
       OwnerLastKnownName: gooderan
     CreatedOn: 1784785315470
@@ -1036,7 +1043,7 @@ Residences:
     Permissions:
       PlayerFlags:
         0048180c-f506-4db7-9aab-cbf71d799011: 2
-      AreaFlags: 15
+      AreaFlags: 16
       OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
       OwnerLastKnownName: gooderan
     CreatedOn: 1786506977417
@@ -1068,6 +1075,19 @@ Residences:
     CreatedOn: 1786925913596
     Areas:
       main: 995:-64:-1399:997:319:-1397
+  jg:
+    TPLoc: -473.46:-15.0:-2375.52:40.8:-91.12
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        0048180c-f506-4db7-9aab-cbf71d799011: 2
+      AreaFlags: 6
+      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
+      OwnerLastKnownName: gooderan
+    CreatedOn: 1788013155030
+    Areas:
+      main: -526:-64:-2428:-371:319:-2325
   klp:
     TPLoc: 408.73:63.0:787.57:4.5:170.25
     Messages: 1
@@ -1075,9 +1095,9 @@ Residences:
     Permissions:
       PlayerFlags:
         2e4361b2-bc47-446f-ac71-aa98f7704dfe: 1
-        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 16
+        97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 17
         564036bc-b901-438e-a88a-413e1ec46882: 2
-      AreaFlags: 17
+      AreaFlags: 18
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
     CreatedOn: 1785926698986
@@ -1091,14 +1111,14 @@ Residences:
       PlayerFlags:
         638630d7-ab29-4e7d-9cf3-9f307ca6f11e: 13
         e0c8f79a-dec9-4884-b00c-58cec9678c5d: 13
-        00000000-0000-0000-0009-01f3fe2c9430: 19
+        00000000-0000-0000-0009-01f3fe2c9430: 20
         2e4361b2-bc47-446f-ac71-aa98f7704dfe: 13
         0853732e-2c96-40a7-905b-e2eec4a8a55c: 13
         00000000-0000-0000-0009-01f9e9173d9b: 13
-        73798702-997f-403e-a01d-458386e872f0: 20
+        73798702-997f-403e-a01d-458386e872f0: 21
         00000000-0000-0000-0009-01f679cd1de1: 13
         732de462-9b38-4b10-a025-f2a25a11680f: 13
-        0048180c-f506-4db7-9aab-cbf71d799011: 18
+        0048180c-f506-4db7-9aab-cbf71d799011: 19
         1532289f-0b57-4f91-a411-23b6de971674: 13
         53c77df1-552e-4450-bbc3-c97c720f42e0: 13
         baf97252-bb30-4887-a797-67b9bce55ffd: 13
@@ -1106,9 +1126,10 @@ Residences:
         b24ac7b6-35c1-4eb9-92d6-7d804239830a: 13
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
         a0e78e2b-bc96-4672-b69e-9301561b68e4: 13
-        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 20
+        15cb0d41-645d-44b1-8f7f-916cc6e4e9d8: 13
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 21
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 13
-      AreaFlags: 21
+      AreaFlags: 22
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
     CreatedOn: 1784854202533
@@ -1122,7 +1143,7 @@ Residences:
       PlayerFlags:
         00000000-0000-0000-0009-01fd5f5cbd43: 1
         0853732e-2c96-40a7-905b-e2eec4a8a55c: 2
-      AreaFlags: 22
+      AreaFlags: 23
       OwnerUUID: 0853732e-2c96-40a7-905b-e2eec4a8a55c
       OwnerLastKnownName: Laohaung
     CreatedOn: 1785159727289
@@ -1136,7 +1157,7 @@ Residences:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786434654382
@@ -1162,7 +1183,7 @@ Residences:
     Permissions:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786279191407
@@ -1175,7 +1196,7 @@ Residences:
     Permissions:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786452998882
@@ -1202,7 +1223,7 @@ Residences:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786544368141
@@ -1216,7 +1237,7 @@ Residences:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786624822759
@@ -1281,7 +1302,7 @@ Residences:
     Permissions:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 23
+      AreaFlags: 24
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1786625694831
@@ -1338,6 +1359,19 @@ Residences:
     CreatedOn: 1786965863575
     Areas:
       main: 4863:-64:-1785:4932:319:-1722
+  maomao:
+    TPLoc: -2390.5:64.0:2715.5:0.0:0.0
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        50d2f0a8-1cef-4c4d-98dc-acd3e7d65b0f: 2
+      AreaFlags: 6
+      OwnerUUID: 50d2f0a8-1cef-4c4d-98dc-acd3e7d65b0f
+      OwnerLastKnownName: maomao3155
+    CreatedOn: 1788014571467
+    Areas:
+      main: -2438:-64:2658:-2344:319:2772
   mgd:
     TPLoc: -808.97:79.0:-535.66:18.0:-151.06
     Messages: 1
@@ -1346,14 +1380,15 @@ Residences:
       PlayerFlags:
         2e4361b2-bc47-446f-ac71-aa98f7704dfe: 1
         564036bc-b901-438e-a88a-413e1ec46882: 2
+        15cb0d41-645d-44b1-8f7f-916cc6e4e9d8: 1
         00000000-0000-0000-0009-01f9e9173d9b: 1
-      AreaFlags: 24
+      AreaFlags: 25
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
     CreatedOn: 1786627789554
     MainResidence: true
     Areas:
-      main: -853:-64:-771:-624:319:-531
+      main: -853:-64:-771:-624:319:-486
   modimen:
     TPLoc: -8810.24:12.0:7665.7:21.9:-113.86
     Messages: 1
@@ -1374,7 +1409,7 @@ Residences:
     Permissions:
       PlayerFlags:
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 2
-      AreaFlags: 25
+      AreaFlags: 26
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
     CreatedOn: 1785371005890
@@ -1387,8 +1422,8 @@ Residences:
     Permissions:
       PlayerFlags:
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
-        564036bc-b901-438e-a88a-413e1ec46882: 26
-      AreaFlags: 27
+        564036bc-b901-438e-a88a-413e1ec46882: 27
+      AreaFlags: 28
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
     CreatedOn: 1784996700665
@@ -1401,14 +1436,14 @@ Residences:
     ChannelColor: Green
     Permissions:
       PlayerFlags:
-        00000000-0000-0000-0009-01f679cd1de1: 29
-        00000000-0000-0000-0009-01f3fe2c9430: 20
+        00000000-0000-0000-0009-01f679cd1de1: 30
+        00000000-0000-0000-0009-01f3fe2c9430: 21
         ef80a196-e3f1-4f27-8a57-1cd569629631: 13
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 4
         da08c8c6-77dc-4aeb-947e-ee019b9268c7: 13
         9314d942-fa72-4a59-9ddc-6aac2f759fc5: 13
-        564036bc-b901-438e-a88a-413e1ec46882: 28
-      AreaFlags: 30
+        564036bc-b901-438e-a88a-413e1ec46882: 29
+      AreaFlags: 31
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
     CreatedOn: 1784766726107
@@ -1428,7 +1463,7 @@ Residences:
             Permissions:
               PlayerFlags:
                 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 2
-              AreaFlags: 31
+              AreaFlags: 32
               OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
               OwnerLastKnownName: Art_Oracles
             CreatedOn: 1785832260760
@@ -1436,7 +1471,7 @@ Residences:
               tpset: 4910:183:1118:4913:186:1121
         Permissions:
           PlayerFlags:
-            ef80a196-e3f1-4f27-8a57-1cd569629631: 32
+            ef80a196-e3f1-4f27-8a57-1cd569629631: 33
             97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 2
           AreaFlags: 6
           OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
@@ -1448,7 +1483,7 @@ Residences:
       PlayerFlags:
         00000000-0000-0000-0009-01f3fe2c9430: 13
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 2
-      AreaFlags: 33
+      AreaFlags: 34
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
       OwnerLastKnownName: Art_Oracles
     CreatedOn: 1785827458751
@@ -1461,7 +1496,7 @@ Residences:
     Permissions:
       PlayerFlags:
         00000000-0000-0000-0009-01f679cd1de1: 2
-      AreaFlags: 34
+      AreaFlags: 35
       OwnerUUID: 00000000-0000-0000-0009-01f679cd1de1
       OwnerLastKnownName: .siajx6333
     CreatedOn: 1787234050413
@@ -1480,6 +1515,48 @@ Residences:
     CreatedOn: 1787802646182
     Areas:
       main: 185:-64:-2444:220:319:-2400
+  summer_time:
+    TPLoc: 3090.37:74.0:-3425.57:57.45:1.2
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 17
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1787226232163
+    Areas:
+      main: 2969:-64:-3554:3199:319:-3404
+  summer_time_left:
+    TPLoc: 2845.38:37.0:-3497.49:-25.2:32.1
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1787381778426
+    Areas:
+      main: 2842:-64:-3530:2968:319:-3463
+  summer_time_right:
+    TPLoc: 3205.21:56.12:-3495.74:-52.2:-120.6
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
+      AreaFlags: 3
+      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
+      OwnerLastKnownName: LiveLoon
+    CreatedOn: 1787383177374
+    Areas:
+      main: 3200:-64:-3555:3310:319:-3444
   synarealand:
     TPLoc: 5394.51:64.0:-1418.81:27.9:-19.65
     Messages: 1
@@ -1487,10 +1564,10 @@ Residences:
     Permissions:
       PlayerFlags:
         0853732e-2c96-40a7-905b-e2eec4a8a55c: 10
-        00000000-0000-0000-0009-01f2ca0984d7: 16
-        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 35
-        b58e4c4f-75d2-4fcc-b646-439d2f039211: 16
-      AreaFlags: 36
+        00000000-0000-0000-0009-01f2ca0984d7: 17
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 36
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 17
+      AreaFlags: 37
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1785068657123
@@ -1536,6 +1613,20 @@ Residences:
     CreatedOn: 1785668411204
     Areas:
       main: 401:-64:728:460:319:754
+  timefishk:
+    TPLoc: 361.62:63.0:-1110.89:59.25:-133.5
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        564036bc-b901-438e-a88a-413e1ec46882: 1
+        15cb0d41-645d-44b1-8f7f-916cc6e4e9d8: 2
+      AreaFlags: 6
+      OwnerUUID: 15cb0d41-645d-44b1-8f7f-916cc6e4e9d8
+      OwnerLastKnownName: timefishk
+    CreatedOn: 1787990137283
+    Areas:
+      main: 280:-64:-1112:362:319:-988
   TThome:
     TPLoc: -3558.69:89.0:6465.45:61.35:-73.8
     Messages: 1
@@ -1544,7 +1635,7 @@ Residences:
       PlayerFlags:
         00000000-0000-0000-0009-01f679cd1de1: 1
         ef80a196-e3f1-4f27-8a57-1cd569629631: 2
-      AreaFlags: 37
+      AreaFlags: 38
       OwnerUUID: ef80a196-e3f1-4f27-8a57-1cd569629631
       OwnerLastKnownName: logtT
     CreatedOn: 1785734946243
@@ -1571,7 +1662,7 @@ Residences:
       PlayerFlags:
         0048180c-f506-4db7-9aab-cbf71d799011: 2
         ef80a196-e3f1-4f27-8a57-1cd569629631: 1
-      AreaFlags: 38
+      AreaFlags: 39
       OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
       OwnerLastKnownName: gooderan
     CreatedOn: 1787287013931
@@ -1584,6 +1675,7 @@ Residences:
     Permissions:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 1
       AreaFlags: 3
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
@@ -1636,51 +1728,12 @@ Residences:
       PlayerFlags:
         00000000-0000-0000-0009-01f679cd1de1: 1
         564036bc-b901-438e-a88a-413e1ec46882: 2
-      AreaFlags: 39
+      AreaFlags: 40
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
     CreatedOn: 1786930420906
     Areas:
       main: 877:-64:2142:928:319:2175
-  zhigengniao-qingge:
-    TPLoc: 3090.37:74.0:-3425.57:57.45:1.2
-    Messages: 1
-    BlockSellPrice: 1.0
-    Permissions:
-      PlayerFlags:
-        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 3
-      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
-      OwnerLastKnownName: LiveLoon
-    CreatedOn: 1787226232163
-    Areas:
-      main: 2969:-64:-3554:3199:319:-3404
-  zhigenniao-qinge-left:
-    TPLoc: 2845.38:37.0:-3497.49:-25.2:32.1
-    Messages: 1
-    BlockSellPrice: 1.0
-    Permissions:
-      PlayerFlags:
-        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 3
-      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
-      OwnerLastKnownName: LiveLoon
-    CreatedOn: 1787381778426
-    Areas:
-      main: 2842:-64:-3530:2968:319:-3463
-  zhigenniao-qinge-right:
-    TPLoc: 3205.21:56.12:-3495.74:-52.2:-120.6
-    Messages: 1
-    BlockSellPrice: 1.0
-    Permissions:
-      PlayerFlags:
-        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
-      AreaFlags: 3
-      OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
-      OwnerLastKnownName: LiveLoon
-    CreatedOn: 1787383177374
-    Areas:
-      main: 3200:-64:-3555:3310:319:-3444
   zhigenniao-right2:
     TPLoc: 3240.26:50.0:-3429.77:-23.4:93.3
     Messages: 1
@@ -1701,7 +1754,8 @@ Residences:
     Permissions:
       PlayerFlags:
         564036bc-b901-438e-a88a-413e1ec46882: 2
-      AreaFlags: 40
+        00000000-0000-0000-0009-01f9e9173d9b: 1
+      AreaFlags: 41
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
     CreatedOn: 1787661448909

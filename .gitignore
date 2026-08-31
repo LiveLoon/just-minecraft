@@ -135,3 +135,21 @@ just-mc-official-webside/frontend/.env.*.local
 *.der
 *.p12
 *.pfx
+
+
+
+# 个人配置文件
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.viminfo
+.cache/
+.config/
+.local/
+.ssh/
+.vim/
+*.swp
+Dockerfile.backup
+logs/
+crash-reports/

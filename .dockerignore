@@ -1,0 +1,11 @@
+# ===== 日志、崩溃报告、缓存、备份 =====
+logs/
+crash-reports/
+cache/
+backups/
+*.log
+
+
+world/
+world_nether/
+world_the_end/

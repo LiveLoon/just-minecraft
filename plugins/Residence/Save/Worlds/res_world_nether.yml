@@ -502,7 +502,7 @@ Flags:
     tnt: false
     leash: false
     pistonprotection: true
-    tp: false
+    tp: true
     creeper: false
     fireball: false
   24:
@@ -718,7 +718,10 @@ Residences:
       PlayerFlags:
         ef80a196-e3f1-4f27-8a57-1cd569629631: 21
         564036bc-b901-438e-a88a-413e1ec46882: 4
+        15cb0d41-645d-44b1-8f7f-916cc6e4e9d8: 22
         00000000-0000-0000-0009-01f9e9173d9b: 22
+        07b702fc-16e7-47e4-a3aa-0df68e24c98c: 22
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 22
       AreaFlags: 23
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
@@ -733,6 +736,7 @@ Residences:
       PlayerFlags:
         564036bc-b901-438e-a88a-413e1ec46882: 4
         00000000-0000-0000-0009-01f9e9173d9b: 22
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 22
       AreaFlags: 24
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: beafg
