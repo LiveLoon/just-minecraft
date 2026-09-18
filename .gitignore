@@ -153,3 +153,5 @@ just-mc-official-webside/frontend/.env.*.local
 Dockerfile.backup
 logs/
 crash-reports/
+repository/*.properties
+
