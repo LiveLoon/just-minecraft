@@ -4,8 +4,7 @@ WORKDIR /root
 
 RUN echo -e "Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch\nServer = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 
-RUN pacman -Sy --noconfirm
-RUN pacman -S --noconfirm jdk26-openjdk cronie zip tzdata openssh
+RUN pacman -Syu --noconfirm jdk26-openjdk cronie zip tzdata openssh zstd
 RUN pacman -Scc --noconfirm
 
 
@@ -38,4 +37,5 @@ EXPOSE 34832
 EXPOSE 3000
 EXPOSE 22
 
-CMD ["sh","-c","crond && java -jar paper-26.2-40.jar"]
+CMD ["sh", "-c", "crond && exec java -jar paper-26.2-40.jar"]
+
