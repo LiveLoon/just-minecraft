@@ -236,3 +236,156 @@ ef80a196-e3f1-4f27-8a57-1cd569629631:
     z: -5685.5
     yaw: 0.0
     pitch: 0.0
+e6c2968e-5586-4d5c-ab2c-e462044f7835:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: 5356
+      y: 110
+      z: -3917
+      timestamp: '2026-09-03T09:45:17.747245846Z'
+  spawn:
+    world: world
+    x: 5356.5
+    y: 110.0
+    z: -3916.5
+    yaw: 0.0
+    pitch: 0.0
+4a89737b-62c9-42a0-bd16-0bfd1463fed6:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: 687
+      y: 96
+      z: 745
+      timestamp: '2026-09-03T11:09:48.085762566Z'
+  spawn:
+    world: world
+    x: 687.5
+    y: 96.0
+    z: 745.5
+    yaw: 0.0
+    pitch: 0.0
+00000000-0000-0000-0009-01f040e8ed49:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -7143
+      y: 108
+      z: 1033
+      timestamp: '2026-09-04T13:59:19.339355693Z'
+  spawn:
+    world: world
+    x: -7142.5
+    y: 108.0
+    z: 1033.5
+    yaw: 0.0
+    pitch: 0.0
+58ddee10-b942-4160-82e1-0a9a160ecbe4:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -2212
+      y: 64
+      z: -544
+      timestamp: '2026-09-05T02:18:29.688416479Z'
+  spawn:
+    world: world
+    x: -2211.5
+    y: 64.0
+    z: -543.5
+    yaw: 0.0
+    pitch: 0.0
+b24ac7b6-35c1-4eb9-92d6-7d804239830a:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -6955
+      y: 63
+      z: -2800
+      timestamp: '2026-09-05T13:37:19.573569516Z'
+  spawn:
+    world: world
+    x: -6954.5
+    y: 63.0
+    z: -2799.5
+    yaw: 0.0
+    pitch: 0.0
+a45420f1-dfd9-4fa1-8bb8-3cf8bd44906a:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -2854
+      y: 122
+      z: 2896
+      timestamp: '2026-09-05T13:42:44.113387363Z'
+  spawn:
+    world: world
+    x: -2853.5
+    y: 122.0
+    z: 2896.5
+    yaw: 0.0
+    pitch: 0.0
+87f1cff8-2ba2-4fa0-80db-755db3cf9e4d:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -5686
+      y: 63
+      z: 8297
+      timestamp: '2026-09-07T04:44:16.683848529Z'
+  spawn:
+    world: world
+    x: -5685.5
+    y: 63.0
+    z: 8297.5
+    yaw: 0.0
+    pitch: 0.0
+00000000-0000-0000-0009-01f3fe2c9430:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: 104
+      y: 98
+      z: 6106
+      timestamp: '2026-09-09T13:50:33.591215258Z'
+  spawn:
+    world: world
+    x: 104.5
+    y: 98.0
+    z: 6106.5
+    yaw: 0.0
+    pitch: 0.0
+939c3a21-fdf9-4761-8e5b-6c2c7f68e6b3:
+  has-joined: true
+  teleport-done: true
+  teleport-log:
+    '0':
+      world: world
+      x: -4267
+      y: 78
+      z: -6088
+      timestamp: '2026-09-14T12:38:46.908276930Z'
+  spawn:
+    world: world
+    x: -4266.5
+    y: 78.0
+    z: -6087.5
+    yaw: 0.0
+    pitch: 0.0

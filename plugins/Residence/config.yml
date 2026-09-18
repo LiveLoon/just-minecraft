@@ -166,7 +166,7 @@ Global:
   Tp:
     # The interval, in seconds, for teleportation.
     # Use 0 to disable
-    TeleportDelay: 10
+    TeleportDelay: 3
     # Show aditional message in title message area when player is teleporting to residence
     TeleportTitleMessage: true
     # List of worlds where teleportation using /res tp is not allowed
@@ -262,7 +262,7 @@ Global:
     # Use specific world name if you only want to use this limitation on this world
     # Specific world name will override 'all' value
     RangeGaps:
-    - all-8
+    - all-0
     TNT:
       # When set to true will allow tnt and minecart with tnt to explode below 62 (default) level outside of residence
       # This will allow mining with tnt and more vanilla play
